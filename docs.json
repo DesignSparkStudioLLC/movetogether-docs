@@ -17,69 +17,67 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "getting-started/what-is-movetogether",
+              "getting-started/welcome",
               "getting-started/create-account",
-              "getting-started/connect-tracker"
+              "getting-started/connect-tracker",
+              "getting-started/finding-friends",
+              "getting-started/first-competition"
             ]
           },
           {
             "group": "Competitions",
             "pages": [
               "competitions/how-it-works",
-              "competitions/joining",
-              "competitions/types",
-              "competitions/scoring",
-              "competitions/leaderboards"
+              "competitions/leaderboard",
+              "competitions/achievements"
             ]
           },
           {
-            "group": "Activity tracking",
+            "group": "Engagement",
             "pages": [
-              "activity/three-rings",
-              "activity/streaks",
-              "activity/supported-devices",
-              "activity/syncing"
+              "engagement/streaks-shields",
+              "engagement/daily-challenges",
+              "engagement/weekly-report",
+              "engagement/seasonal-events"
             ]
           },
           {
-            "group": "Coach Mo",
+            "group": "Social & Coach",
             "pages": [
-              "coach-mo/meeting-mo",
-              "coach-mo/weekly-report",
-              "coach-mo/voice-on-watch",
-              "coach-mo/message-quota"
-            ]
-          },
-          {
-            "group": "Achievements",
-            "pages": [
-              "achievements/medals",
-              "achievements/categories"
+              "social-coach/friends-feed",
+              "social-coach/coach-mo",
+              "social-coach/direct-messaging"
             ]
           },
           {
             "group": "Subscriptions",
             "pages": [
               "subscriptions/plans",
-              "subscriptions/trial-and-billing",
+              "subscriptions/subscribe",
               "subscriptions/managing",
-              "subscriptions/restoring"
+              "subscriptions/billing"
             ]
           },
           {
-            "group": "Account & data",
+            "group": "Account & privacy",
             "pages": [
-              "account/privacy",
-              "account/delete-account",
-              "account/export-data"
+              "account/profile",
+              "account/privacy-settings",
+              "account/data-and-privacy",
+              "account/notifications",
+              "account/guidelines-moderation",
+              "account/security",
+              "account/reporting-blocking"
             ]
           },
           {
             "group": "Troubleshooting",
             "pages": [
-              "troubleshooting/activity-not-syncing",
-              "troubleshooting/competition-results-wrong",
-              "troubleshooting/coach-mo-not-responding",
+              "troubleshooting/sync-issues",
+              "troubleshooting/competition-issues",
+              "troubleshooting/notification-problems",
+              "troubleshooting/app-performance",
+              "troubleshooting/subscription-issues",
               "troubleshooting/contact-support"
             ]
           }
@@ -92,12 +90,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Contact support",
-        "href": "mailto:support@movetogetherfitness.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Download app",

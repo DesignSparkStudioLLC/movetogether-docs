@@ -1,37 +1,78 @@
 ---
-title: "Connect your tracker"
-description: "Link Apple Health or your third-party fitness tracker."
+title: "Connecting your fitness tracker"
+description: "How to connect your wearable device to MoveTogether, what data syncs, and how to switch trackers."
 ---
 
-MoveTogether reads your daily activity from one of eight supported sources. You only need to connect one.
+## Supported devices
 
-## Supported trackers
+MoveTogether works with the following fitness platforms through OpenWearables, our secure health data integration partner:
 
-- **Apple Watch** (via Apple Health)
-- **Fitbit**
-- **Garmin**
-- **Whoop**
-- **Oura**
-- **Polar**
-- **Suunto**
-- **Coros**
+| Device / Platform | Connection method |
+|-------------------|-------------------|
+| Apple Watch | Apple Health (native on-device) |
+| Fitbit | OAuth sign-in |
+| Garmin | OAuth sign-in |
+| WHOOP | OAuth sign-in |
+| Oura Ring | OAuth sign-in |
+| Strava | OAuth sign-in |
+| Polar | OAuth sign-in |
+| Suunto | OAuth sign-in |
+| Ultrahuman | OAuth sign-in |
 
-## How to connect
+## How connections work
 
-1. Open the MoveTogether app.
-2. Go to **Settings → Connections** (or follow the onboarding prompt if it's your first sign-in).
-3. Tap your tracker brand.
-4. You'll be sent to your tracker's official login page to authorize MoveTogether.
-5. Once you approve, your last 90 days of activity will start syncing into MoveTogether.
+Apple Watch connects through Apple Health. MoveTogether reads your fitness data directly from the Health app on your iPhone. Your Apple Watch automatically syncs its data to Apple Health, and MoveTogether reads it from there.
 
-## How long does the first sync take?
+All other trackers connect through a secure OAuth sign-in. You'll sign in to your tracker's account directly within MoveTogether, which authorizes the app to securely sync your fitness data. Your login credentials are never stored on our servers — the connection is handled securely through your tracker's own authorization system.
 
-Most trackers backfill within a few minutes. Garmin and Whoop can take up to 15 minutes for the initial 90-day pull.
+## Connecting Apple Watch
 
-## Can I connect more than one tracker?
-
-You can, but only one tracker is used as your **active source** for competitions at a time. Switch your active source from **Settings → Connections** at any time.
+1. Open MoveTogether and go to **Settings → Connected Devices**.
+2. Tap **Apple Watch**.
+3. A prompt will appear asking you to grant MoveTogether permission to read your Apple Health data. Tap **Allow All** (or select the specific categories you want to share).
+4. Your activity will begin syncing automatically.
 
 <Note>
-  Activity not showing up? See [Activity not syncing](/troubleshooting/activity-not-syncing).
+  MoveTogether needs read access to Apple Health categories including Steps, Active Energy (Calories), Exercise Minutes, and Workouts. If you deny these permissions, your activity won't appear in competitions.
 </Note>
+
+If you don't see the permissions prompt, open the Settings app on your iPhone (not MoveTogether), scroll down and tap **Health**, tap **Data Access & Devices**, find MoveTogether in the list, and enable the data categories you want to share.
+
+## Connecting other trackers
+
+The process is the same for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, and Ultrahuman:
+
+1. Open MoveTogether and go to **Settings → Connected Devices**.
+2. Tap the name of your tracker.
+3. You'll be redirected to your tracker's login page. Sign in with your account credentials.
+4. Review the permissions and tap **Allow** to authorize MoveTogether.
+5. Your data will begin syncing. Initial sync may take a few minutes.
+
+<Tip>
+  Make sure your tracker's companion app on your phone has recently synced with your device before connecting to MoveTogether. This ensures your latest data is available.
+</Tip>
+
+## What data syncs?
+
+| Data type | Used for |
+|-----------|----------|
+| Steps | Step Count scoring, Steps ring |
+| Active calories | Raw Numbers scoring, Move ring |
+| Exercise minutes | Workout scoring, Exercise ring |
+| Workouts | Workout Based scoring, activity feed |
+
+## How often does data sync?
+
+**Apple Watch:** Data syncs within minutes, since it's read directly from Apple Health on your device. Background sync also runs periodically to keep your data current even when you're not actively using the app.
+
+**All other trackers:** Data typically syncs every 15–30 minutes. The exact frequency depends on how often your tracker's companion app syncs with its servers. You can pull down to refresh on leaderboard screens to request the latest data.
+
+## Switching trackers
+
+If you get a new wearable or want to switch to a different tracker, go to **Settings → Connected Devices**, tap your currently connected tracker and select **Disconnect**, then connect your new device following the instructions above.
+
+Your competition history, achievements, and friends list stay intact. Only future activity will come from the new tracker.
+
+## Can I connect multiple trackers?
+
+You can only have one active tracker at a time to prevent duplicate data. If you switch devices mid-competition, your score will reflect the combined activity from both trackers (the data already recorded from your old tracker, plus new data from your new tracker going forward).
