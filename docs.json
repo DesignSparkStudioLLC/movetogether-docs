@@ -4,88 +4,88 @@
   "name": "MoveTogether",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
+    "light": "#22C55E",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Help Center",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/what-is-movetogether",
+              "getting-started/create-account",
+              "getting-started/connect-tracker"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Competitions",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "competitions/how-it-works",
+              "competitions/joining",
+              "competitions/types",
+              "competitions/scoring",
+              "competitions/leaderboards"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Activity tracking",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
+              "activity/three-rings",
+              "activity/streaks",
+              "activity/supported-devices",
+              "activity/syncing"
             ]
           },
           {
-            "group": "Agent ready",
+            "group": "Coach Mo",
             "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "coach-mo/meeting-mo",
+              "coach-mo/weekly-report",
+              "coach-mo/voice-on-watch",
+              "coach-mo/message-quota"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Achievements",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "achievements/medals",
+              "achievements/categories"
+            ]
+          },
+          {
+            "group": "Subscriptions",
+            "pages": [
+              "subscriptions/plans",
+              "subscriptions/trial-and-billing",
+              "subscriptions/managing",
+              "subscriptions/restoring"
+            ]
+          },
+          {
+            "group": "Account & data",
+            "pages": [
+              "account/privacy",
+              "account/delete-account",
+              "account/export-data"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/activity-not-syncing",
+              "troubleshooting/competition-results-wrong",
+              "troubleshooting/coach-mo-not-responding",
+              "troubleshooting/contact-support"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -94,33 +94,19 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact support",
+        "href": "mailto:support@movetogetherfitness.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Download app",
+      "href": "https://movetogetherfitness.com"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://movetogetherfitness.com"
     }
   }
 }
