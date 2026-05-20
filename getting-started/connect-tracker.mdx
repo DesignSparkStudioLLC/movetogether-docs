@@ -5,7 +5,7 @@ description: "How to connect your wearable device to MoveTogether, what data syn
 
 ## Supported devices
 
-MoveTogether works with the following fitness platforms through OpenWearables, our secure health data integration partner:
+MoveTogether works with the following fitness platforms through OpenWearables, our health data integration partner:
 
 | Device / Platform | Connection method |
 |-------------------|-------------------|
@@ -21,35 +21,35 @@ MoveTogether works with the following fitness platforms through OpenWearables, o
 
 ## How connections work
 
-Apple Watch connects through Apple Health. MoveTogether reads your fitness data directly from the Health app on your iPhone. Your Apple Watch automatically syncs its data to Apple Health, and MoveTogether reads it from there.
+Apple Watch connects through Apple Health. MoveTogether reads your fitness data directly from the Health app on your iPhone. Your Apple Watch syncs to Apple Health on its own, and MoveTogether reads from there.
 
-All other trackers connect through a secure OAuth sign-in. You'll sign in to your tracker's account directly within MoveTogether, which authorizes the app to securely sync your fitness data. Your login credentials are never stored on our servers — the connection is handled securely through your tracker's own authorization system.
+All other trackers connect through an OAuth sign-in. You sign in to your tracker's account inside MoveTogether, which authorizes the app to sync your fitness data. Your login credentials are never stored on our servers. The connection runs through your tracker's own authorization system.
 
 ## Connecting Apple Watch
 
 1. Open MoveTogether and go to **Settings → Connected Devices**.
 2. Tap **Apple Watch**.
-3. A prompt will appear asking you to grant MoveTogether permission to read your Apple Health data. Tap **Allow All** (or select the specific categories you want to share).
-4. Your activity will begin syncing automatically.
+3. A prompt asks you to grant MoveTogether permission to read your Apple Health data. Tap **Allow All** (or pick specific categories).
+4. Your activity starts syncing.
 
 <Note>
   MoveTogether needs read access to Apple Health categories including Steps, Active Energy (Calories), Exercise Minutes, and Workouts. If you deny these permissions, your activity won't appear in competitions.
 </Note>
 
-If you don't see the permissions prompt, open the Settings app on your iPhone (not MoveTogether), scroll down and tap **Health**, tap **Data Access & Devices**, find MoveTogether in the list, and enable the data categories you want to share.
+If the permissions prompt doesn't appear, open the Settings app on your iPhone (not MoveTogether), scroll down and tap **Health**, tap **Data Access & Devices**, find MoveTogether in the list, and enable the data categories you want to share.
 
 ## Connecting other trackers
 
-The process is the same for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, and Ultrahuman:
+Same process for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, and Ultrahuman:
 
 1. Open MoveTogether and go to **Settings → Connected Devices**.
 2. Tap the name of your tracker.
-3. You'll be redirected to your tracker's login page. Sign in with your account credentials.
+3. You'll be sent to your tracker's login page. Sign in with your account.
 4. Review the permissions and tap **Allow** to authorize MoveTogether.
-5. Your data will begin syncing. Initial sync may take a few minutes.
+5. Your data starts syncing. The first sync can take a few minutes.
 
 <Tip>
-  Make sure your tracker's companion app on your phone has recently synced with your device before connecting to MoveTogether. This ensures your latest data is available.
+  Open your tracker's companion app and let it sync with your device before connecting to MoveTogether. That way your latest data is ready to go.
 </Tip>
 
 ## What data syncs?
@@ -63,16 +63,16 @@ The process is the same for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, 
 
 ## How often does data sync?
 
-**Apple Watch:** Data syncs within minutes, since it's read directly from Apple Health on your device. Background sync also runs periodically to keep your data current even when you're not actively using the app.
+**Apple Watch:** Within minutes, since it's read directly from Apple Health on your device. A background sync also runs periodically to keep things current when you're not actively using the app.
 
-**All other trackers:** Data typically syncs every 15–30 minutes. The exact frequency depends on how often your tracker's companion app syncs with its servers. You can pull down to refresh on leaderboard screens to request the latest data.
+**All other trackers:** Usually every 15 to 30 minutes. The exact frequency depends on how often your tracker's companion app syncs with its own servers. Pull down to refresh on leaderboard screens to request the latest data.
 
 ## Switching trackers
 
-If you get a new wearable or want to switch to a different tracker, go to **Settings → Connected Devices**, tap your currently connected tracker and select **Disconnect**, then connect your new device following the instructions above.
+If you get a new wearable or want to switch trackers, go to **Settings → Connected Devices**, tap your current tracker and select **Disconnect**, then connect your new device using the steps above.
 
 Your competition history, achievements, and friends list stay intact. Only future activity will come from the new tracker.
 
 ## Can I connect multiple trackers?
 
-You can only have one active tracker at a time to prevent duplicate data. If you switch devices mid-competition, your score will reflect the combined activity from both trackers (the data already recorded from your old tracker, plus new data from your new tracker going forward).
+You can only have one active tracker at a time, to prevent duplicate data. If you switch devices mid-competition, your score will reflect the combined activity from both trackers (data already recorded from your old tracker, plus new data from your new tracker going forward).
