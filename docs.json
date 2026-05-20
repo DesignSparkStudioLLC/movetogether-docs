@@ -20,6 +20,7 @@
               "getting-started/welcome",
               "getting-started/create-account",
               "getting-started/connect-tracker",
+              "getting-started/setting-goals",
               "getting-started/finding-friends",
               "getting-started/first-competition"
             ]
@@ -29,7 +30,8 @@
             "pages": [
               "competitions/how-it-works",
               "competitions/leaderboard",
-              "competitions/achievements"
+              "competitions/achievements",
+              "competitions/competition-history"
             ]
           },
           {
@@ -38,6 +40,7 @@
               "engagement/streaks-shields",
               "engagement/daily-challenges",
               "engagement/weekly-report",
+              "engagement/sharing-your-wins",
               "engagement/seasonal-events"
             ]
           },
@@ -46,6 +49,8 @@
             "pages": [
               "social-coach/friends-feed",
               "social-coach/coach-mo",
+              "social-coach/coach-mo-capabilities",
+              "social-coach/managing-conversations",
               "social-coach/direct-messaging"
             ]
           },
@@ -62,9 +67,11 @@
             "group": "Account & privacy",
             "pages": [
               "account/profile",
+              "account/watch-complications",
+              "account/notifications",
+              "account/referrals",
               "account/privacy-settings",
               "account/data-and-privacy",
-              "account/notifications",
               "account/guidelines-moderation",
               "account/security",
               "account/reporting-blocking"
