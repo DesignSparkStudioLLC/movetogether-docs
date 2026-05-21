@@ -31,85 +31,613 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Help Center",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "getting-started/welcome",
-              "getting-started/create-account",
-              "getting-started/connect-tracker",
-              "getting-started/setting-goals",
-              "getting-started/finding-friends",
-              "getting-started/first-competition"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "getting-started/welcome",
+                  "getting-started/create-account",
+                  "getting-started/connect-tracker",
+                  "getting-started/setting-goals",
+                  "getting-started/finding-friends",
+                  "getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "Competitions",
+                "pages": [
+                  "competitions/how-it-works",
+                  "competitions/leaderboard",
+                  "competitions/achievements",
+                  "competitions/competition-history"
+                ]
+              },
+              {
+                "group": "Engagement",
+                "pages": [
+                  "engagement/streaks-shields",
+                  "engagement/daily-challenges",
+                  "engagement/weekly-report",
+                  "engagement/sharing-your-wins",
+                  "engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "Social & Coach",
+                "pages": [
+                  "social-coach/friends-feed",
+                  "social-coach/what-makes-mo-different",
+                  "social-coach/coach-mo",
+                  "social-coach/coach-mo-capabilities",
+                  "social-coach/managing-conversations",
+                  "social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "Subscriptions",
+                "pages": [
+                  "subscriptions/plans",
+                  "subscriptions/subscribe",
+                  "subscriptions/managing",
+                  "subscriptions/billing"
+                ]
+              },
+              {
+                "group": "Account & privacy",
+                "pages": [
+                  "account/profile",
+                  "account/watch-complications",
+                  "account/notifications",
+                  "account/referrals",
+                  "account/privacy-settings",
+                  "account/data-and-privacy",
+                  "account/ai-and-your-data",
+                  "account/guidelines-moderation",
+                  "account/security",
+                  "account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "troubleshooting/sync-issues",
+                  "troubleshooting/competition-issues",
+                  "troubleshooting/notification-problems",
+                  "troubleshooting/app-performance",
+                  "troubleshooting/subscription-issues",
+                  "troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "tabs": [
           {
-            "group": "Competitions",
-            "pages": [
-              "competitions/how-it-works",
-              "competitions/leaderboard",
-              "competitions/achievements",
-              "competitions/competition-history"
+            "tab": "Centro de ayuda",
+            "groups": [
+              {
+                "group": "Primeros pasos",
+                "pages": [
+                  "es/index",
+                  "es/getting-started/welcome",
+                  "es/getting-started/create-account",
+                  "es/getting-started/connect-tracker",
+                  "es/getting-started/setting-goals",
+                  "es/getting-started/finding-friends",
+                  "es/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "Competiciones",
+                "pages": [
+                  "es/competitions/how-it-works",
+                  "es/competitions/leaderboard",
+                  "es/competitions/achievements",
+                  "es/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "Participación",
+                "pages": [
+                  "es/engagement/streaks-shields",
+                  "es/engagement/daily-challenges",
+                  "es/engagement/weekly-report",
+                  "es/engagement/sharing-your-wins",
+                  "es/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "Social y Coach",
+                "pages": [
+                  "es/social-coach/friends-feed",
+                  "es/social-coach/what-makes-mo-different",
+                  "es/social-coach/coach-mo",
+                  "es/social-coach/coach-mo-capabilities",
+                  "es/social-coach/managing-conversations",
+                  "es/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "Suscripciones",
+                "pages": [
+                  "es/subscriptions/plans",
+                  "es/subscriptions/subscribe",
+                  "es/subscriptions/managing",
+                  "es/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "Cuenta y privacidad",
+                "pages": [
+                  "es/account/profile",
+                  "es/account/watch-complications",
+                  "es/account/notifications",
+                  "es/account/referrals",
+                  "es/account/privacy-settings",
+                  "es/account/data-and-privacy",
+                  "es/account/ai-and-your-data",
+                  "es/account/guidelines-moderation",
+                  "es/account/security",
+                  "es/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "Solución de problemas",
+                "pages": [
+                  "es/troubleshooting/sync-issues",
+                  "es/troubleshooting/competition-issues",
+                  "es/troubleshooting/notification-problems",
+                  "es/troubleshooting/app-performance",
+                  "es/troubleshooting/subscription-issues",
+                  "es/troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "tabs": [
           {
-            "group": "Engagement",
-            "pages": [
-              "engagement/streaks-shields",
-              "engagement/daily-challenges",
-              "engagement/weekly-report",
-              "engagement/sharing-your-wins",
-              "engagement/seasonal-events"
+            "tab": "Centre d'aide",
+            "groups": [
+              {
+                "group": "Prise en main",
+                "pages": [
+                  "fr/index",
+                  "fr/getting-started/welcome",
+                  "fr/getting-started/create-account",
+                  "fr/getting-started/connect-tracker",
+                  "fr/getting-started/setting-goals",
+                  "fr/getting-started/finding-friends",
+                  "fr/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "Compétitions",
+                "pages": [
+                  "fr/competitions/how-it-works",
+                  "fr/competitions/leaderboard",
+                  "fr/competitions/achievements",
+                  "fr/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "Engagement",
+                "pages": [
+                  "fr/engagement/streaks-shields",
+                  "fr/engagement/daily-challenges",
+                  "fr/engagement/weekly-report",
+                  "fr/engagement/sharing-your-wins",
+                  "fr/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "Social et Coach",
+                "pages": [
+                  "fr/social-coach/friends-feed",
+                  "fr/social-coach/what-makes-mo-different",
+                  "fr/social-coach/coach-mo",
+                  "fr/social-coach/coach-mo-capabilities",
+                  "fr/social-coach/managing-conversations",
+                  "fr/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "Abonnements",
+                "pages": [
+                  "fr/subscriptions/plans",
+                  "fr/subscriptions/subscribe",
+                  "fr/subscriptions/managing",
+                  "fr/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "Compte et confidentialité",
+                "pages": [
+                  "fr/account/profile",
+                  "fr/account/watch-complications",
+                  "fr/account/notifications",
+                  "fr/account/referrals",
+                  "fr/account/privacy-settings",
+                  "fr/account/data-and-privacy",
+                  "fr/account/ai-and-your-data",
+                  "fr/account/guidelines-moderation",
+                  "fr/account/security",
+                  "fr/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "Dépannage",
+                "pages": [
+                  "fr/troubleshooting/sync-issues",
+                  "fr/troubleshooting/competition-issues",
+                  "fr/troubleshooting/notification-problems",
+                  "fr/troubleshooting/app-performance",
+                  "fr/troubleshooting/subscription-issues",
+                  "fr/troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "zh",
+        "tabs": [
           {
-            "group": "Social & Coach",
-            "pages": [
-              "social-coach/friends-feed",
-              "social-coach/what-makes-mo-different",
-              "social-coach/coach-mo",
-              "social-coach/coach-mo-capabilities",
-              "social-coach/managing-conversations",
-              "social-coach/direct-messaging"
+            "tab": "帮助中心",
+            "groups": [
+              {
+                "group": "入门",
+                "pages": [
+                  "zh/index",
+                  "zh/getting-started/welcome",
+                  "zh/getting-started/create-account",
+                  "zh/getting-started/connect-tracker",
+                  "zh/getting-started/setting-goals",
+                  "zh/getting-started/finding-friends",
+                  "zh/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "竞赛",
+                "pages": [
+                  "zh/competitions/how-it-works",
+                  "zh/competitions/leaderboard",
+                  "zh/competitions/achievements",
+                  "zh/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "参与度",
+                "pages": [
+                  "zh/engagement/streaks-shields",
+                  "zh/engagement/daily-challenges",
+                  "zh/engagement/weekly-report",
+                  "zh/engagement/sharing-your-wins",
+                  "zh/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "社交与教练",
+                "pages": [
+                  "zh/social-coach/friends-feed",
+                  "zh/social-coach/what-makes-mo-different",
+                  "zh/social-coach/coach-mo",
+                  "zh/social-coach/coach-mo-capabilities",
+                  "zh/social-coach/managing-conversations",
+                  "zh/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "订阅",
+                "pages": [
+                  "zh/subscriptions/plans",
+                  "zh/subscriptions/subscribe",
+                  "zh/subscriptions/managing",
+                  "zh/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "账号与隐私",
+                "pages": [
+                  "zh/account/profile",
+                  "zh/account/watch-complications",
+                  "zh/account/notifications",
+                  "zh/account/referrals",
+                  "zh/account/privacy-settings",
+                  "zh/account/data-and-privacy",
+                  "zh/account/ai-and-your-data",
+                  "zh/account/guidelines-moderation",
+                  "zh/account/security",
+                  "zh/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "故障排查",
+                "pages": [
+                  "zh/troubleshooting/sync-issues",
+                  "zh/troubleshooting/competition-issues",
+                  "zh/troubleshooting/notification-problems",
+                  "zh/troubleshooting/app-performance",
+                  "zh/troubleshooting/subscription-issues",
+                  "zh/troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "de",
+        "tabs": [
           {
-            "group": "Subscriptions",
-            "pages": [
-              "subscriptions/plans",
-              "subscriptions/subscribe",
-              "subscriptions/managing",
-              "subscriptions/billing"
+            "tab": "Hilfecenter",
+            "groups": [
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  "de/index",
+                  "de/getting-started/welcome",
+                  "de/getting-started/create-account",
+                  "de/getting-started/connect-tracker",
+                  "de/getting-started/setting-goals",
+                  "de/getting-started/finding-friends",
+                  "de/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "Wettkämpfe",
+                "pages": [
+                  "de/competitions/how-it-works",
+                  "de/competitions/leaderboard",
+                  "de/competitions/achievements",
+                  "de/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "Engagement",
+                "pages": [
+                  "de/engagement/streaks-shields",
+                  "de/engagement/daily-challenges",
+                  "de/engagement/weekly-report",
+                  "de/engagement/sharing-your-wins",
+                  "de/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "Sozial & Coach",
+                "pages": [
+                  "de/social-coach/friends-feed",
+                  "de/social-coach/what-makes-mo-different",
+                  "de/social-coach/coach-mo",
+                  "de/social-coach/coach-mo-capabilities",
+                  "de/social-coach/managing-conversations",
+                  "de/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "Abonnements",
+                "pages": [
+                  "de/subscriptions/plans",
+                  "de/subscriptions/subscribe",
+                  "de/subscriptions/managing",
+                  "de/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "Konto & Datenschutz",
+                "pages": [
+                  "de/account/profile",
+                  "de/account/watch-complications",
+                  "de/account/notifications",
+                  "de/account/referrals",
+                  "de/account/privacy-settings",
+                  "de/account/data-and-privacy",
+                  "de/account/ai-and-your-data",
+                  "de/account/guidelines-moderation",
+                  "de/account/security",
+                  "de/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "Fehlerbehebung",
+                "pages": [
+                  "de/troubleshooting/sync-issues",
+                  "de/troubleshooting/competition-issues",
+                  "de/troubleshooting/notification-problems",
+                  "de/troubleshooting/app-performance",
+                  "de/troubleshooting/subscription-issues",
+                  "de/troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "it",
+        "tabs": [
           {
-            "group": "Account & privacy",
-            "pages": [
-              "account/profile",
-              "account/watch-complications",
-              "account/notifications",
-              "account/referrals",
-              "account/privacy-settings",
-              "account/data-and-privacy",
-              "account/ai-and-your-data",
-              "account/guidelines-moderation",
-              "account/security",
-              "account/reporting-blocking"
+            "tab": "Centro assistenza",
+            "groups": [
+              {
+                "group": "Primi passi",
+                "pages": [
+                  "it/index",
+                  "it/getting-started/welcome",
+                  "it/getting-started/create-account",
+                  "it/getting-started/connect-tracker",
+                  "it/getting-started/setting-goals",
+                  "it/getting-started/finding-friends",
+                  "it/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "Competizioni",
+                "pages": [
+                  "it/competitions/how-it-works",
+                  "it/competitions/leaderboard",
+                  "it/competitions/achievements",
+                  "it/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "Coinvolgimento",
+                "pages": [
+                  "it/engagement/streaks-shields",
+                  "it/engagement/daily-challenges",
+                  "it/engagement/weekly-report",
+                  "it/engagement/sharing-your-wins",
+                  "it/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "Social e Coach",
+                "pages": [
+                  "it/social-coach/friends-feed",
+                  "it/social-coach/what-makes-mo-different",
+                  "it/social-coach/coach-mo",
+                  "it/social-coach/coach-mo-capabilities",
+                  "it/social-coach/managing-conversations",
+                  "it/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "Abbonamenti",
+                "pages": [
+                  "it/subscriptions/plans",
+                  "it/subscriptions/subscribe",
+                  "it/subscriptions/managing",
+                  "it/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "Account e privacy",
+                "pages": [
+                  "it/account/profile",
+                  "it/account/watch-complications",
+                  "it/account/notifications",
+                  "it/account/referrals",
+                  "it/account/privacy-settings",
+                  "it/account/data-and-privacy",
+                  "it/account/ai-and-your-data",
+                  "it/account/guidelines-moderation",
+                  "it/account/security",
+                  "it/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "Risoluzione dei problemi",
+                "pages": [
+                  "it/troubleshooting/sync-issues",
+                  "it/troubleshooting/competition-issues",
+                  "it/troubleshooting/notification-problems",
+                  "it/troubleshooting/app-performance",
+                  "it/troubleshooting/subscription-issues",
+                  "it/troubleshooting/contact-support"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "ja",
+        "tabs": [
           {
-            "group": "Troubleshooting",
-            "pages": [
-              "troubleshooting/sync-issues",
-              "troubleshooting/competition-issues",
-              "troubleshooting/notification-problems",
-              "troubleshooting/app-performance",
-              "troubleshooting/subscription-issues",
-              "troubleshooting/contact-support"
+            "tab": "ヘルプセンター",
+            "groups": [
+              {
+                "group": "はじめ方",
+                "pages": [
+                  "ja/index",
+                  "ja/getting-started/welcome",
+                  "ja/getting-started/create-account",
+                  "ja/getting-started/connect-tracker",
+                  "ja/getting-started/setting-goals",
+                  "ja/getting-started/finding-friends",
+                  "ja/getting-started/first-competition"
+                ]
+              },
+              {
+                "group": "コンペティション",
+                "pages": [
+                  "ja/competitions/how-it-works",
+                  "ja/competitions/leaderboard",
+                  "ja/competitions/achievements",
+                  "ja/competitions/competition-history"
+                ]
+              },
+              {
+                "group": "エンゲージメント",
+                "pages": [
+                  "ja/engagement/streaks-shields",
+                  "ja/engagement/daily-challenges",
+                  "ja/engagement/weekly-report",
+                  "ja/engagement/sharing-your-wins",
+                  "ja/engagement/seasonal-events"
+                ]
+              },
+              {
+                "group": "ソーシャルとコーチ",
+                "pages": [
+                  "ja/social-coach/friends-feed",
+                  "ja/social-coach/what-makes-mo-different",
+                  "ja/social-coach/coach-mo",
+                  "ja/social-coach/coach-mo-capabilities",
+                  "ja/social-coach/managing-conversations",
+                  "ja/social-coach/direct-messaging"
+                ]
+              },
+              {
+                "group": "サブスクリプション",
+                "pages": [
+                  "ja/subscriptions/plans",
+                  "ja/subscriptions/subscribe",
+                  "ja/subscriptions/managing",
+                  "ja/subscriptions/billing"
+                ]
+              },
+              {
+                "group": "アカウントとプライバシー",
+                "pages": [
+                  "ja/account/profile",
+                  "ja/account/watch-complications",
+                  "ja/account/notifications",
+                  "ja/account/referrals",
+                  "ja/account/privacy-settings",
+                  "ja/account/data-and-privacy",
+                  "ja/account/ai-and-your-data",
+                  "ja/account/guidelines-moderation",
+                  "ja/account/security",
+                  "ja/account/reporting-blocking"
+                ]
+              },
+              {
+                "group": "トラブルシューティング",
+                "pages": [
+                  "ja/troubleshooting/sync-issues",
+                  "ja/troubleshooting/competition-issues",
+                  "ja/troubleshooting/notification-problems",
+                  "ja/troubleshooting/app-performance",
+                  "ja/troubleshooting/subscription-issues",
+                  "ja/troubleshooting/contact-support"
+                ]
+              }
             ]
           }
         ]
