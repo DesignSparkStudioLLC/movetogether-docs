@@ -41,6 +41,7 @@
               "index",
               "getting-started/welcome",
               "getting-started/create-account",
+              "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
               "getting-started/setting-goals",
               "getting-started/finding-friends",
@@ -73,6 +74,10 @@
               "social-coach/what-makes-mo-different",
               "social-coach/coach-mo",
               "social-coach/coach-mo-capabilities",
+              "social-coach/coach-mo-settings",
+              "social-coach/managing-coach-mo-memory",
+              "social-coach/reading-activity-trace",
+              "social-coach/roast-mode",
               "social-coach/managing-conversations",
               "social-coach/direct-messaging"
             ]
@@ -90,7 +95,9 @@
             "group": "Account & privacy",
             "pages": [
               "account/profile",
-              "account/watch-complications",
+              "account/account-details",
+              "account/apple-watch-app",
+              "account/appearance-and-display",
               "account/notifications",
               "account/referrals",
               "account/privacy-settings",
