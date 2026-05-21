@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "MoveTogether",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#22C55E",
-    "dark": "#15803D"
+    "primary": "#FB104E",
+    "light": "#FE4173",
+    "dark": "#D6063E"
   },
   "favicon": "/favicon.png",
   "navigation": {
