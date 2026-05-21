@@ -1,0 +1,78 @@
+---
+title: "连接你的健身追踪器"
+description: "如何通过 Apple Health 或 OAuth 登录将 Apple Watch、Fitbit、Garmin、WHOOP、Oura、Strava、Polar、Suunto 或 Ultrahuman 连接到 MoveTogether。"
+---
+
+## 支持的设备
+
+MoveTogether 通过我们的健康数据集成合作伙伴 OpenWearables 与以下健身平台合作：
+
+| 设备 / 平台 | 连接方式 |
+|-------------------|-------------------|
+| Apple Watch | Apple Health（设备原生） |
+| Fitbit | OAuth 登录 |
+| Garmin | OAuth 登录 |
+| WHOOP | OAuth 登录 |
+| Oura Ring | OAuth 登录 |
+| Strava | OAuth 登录 |
+| Polar | OAuth 登录 |
+| Suunto | OAuth 登录 |
+| Ultrahuman | OAuth 登录 |
+
+## 连接如何运作
+
+Apple Watch 通过 Apple Health 连接。MoveTogether 直接从你 iPhone 上的健康应用读取健身数据。你的 Apple Watch 自行同步到 Apple Health，MoveTogether 从那里读取。
+
+所有其他追踪器通过 OAuth 登录连接。你在 MoveTogether 中登录你的追踪器账户，授权应用同步你的健身数据。你的登录凭据从未存储在我们的服务器上。连接通过你追踪器自己的授权系统运行。
+
+## 连接 Apple Watch
+
+1. 打开 MoveTogether 并前往**设置 → 已连接设备**。
+2. 点按 **Apple Watch**。
+3. 提示会要求你授予 MoveTogether 读取你 Apple Health 数据的权限。点按**允许全部**（或选择特定类别）。
+4. 你的活动开始同步。
+
+<Note>
+  MoveTogether 需要 Apple Health 类别的读取权限，包括步数、活动能量（卡路里）、锻炼分钟数和训练。如果你拒绝这些权限，你的活动将不会出现在比赛中。
+</Note>
+
+如果权限提示没有出现，打开 iPhone 上的设置应用（不是 MoveTogether），向下滚动并点按**健康**，点按**数据访问与设备**，在列表中找到 MoveTogether，启用你想要分享的数据类别。
+
+## 连接其他追踪器
+
+Fitbit、Garmin、WHOOP、Oura、Strava、Polar、Suunto 和 Ultrahuman 的步骤相同：
+
+1. 打开 MoveTogether 并前往**设置 → 已连接设备**。
+2. 点按你追踪器的名称。
+3. 你将被发送到你追踪器的登录页面。使用你的账户登录。
+4. 检查权限并点按**允许**以授权 MoveTogether。
+5. 你的数据开始同步。第一次同步可能需要几分钟。
+
+<Tip>
+  在连接到 MoveTogether 之前，打开你追踪器的伴侣应用并让它与你的设备同步。这样你的最新数据就准备好了。
+</Tip>
+
+## 同步哪些数据？
+
+| 数据类型 | 用于 |
+|-----------|----------|
+| 步数 | 步数计数计分、步数环 |
+| 活动卡路里 | 原始数据计分、移动环 |
+| 锻炼分钟数 | 训练计分、锻炼环 |
+| 训练 | 基于训练的计分、活动动态 |
+
+## 数据多久同步一次？
+
+**Apple Watch：** 几分钟内，因为它直接从你设备上的 Apple Health 读取。后台同步也会定期运行，以便在你没有主动使用应用时保持最新状态。
+
+**所有其他追踪器：** 通常每 15 到 30 分钟一次。确切频率取决于你追踪器的伴侣应用与其自己服务器的同步频率。在排行榜屏幕上下拉刷新以请求最新数据。
+
+## 切换追踪器
+
+如果你获得新的可穿戴设备或想切换追踪器，前往**设置 → 已连接设备**，点按当前追踪器并选择**断开连接**，然后按照上述步骤连接你的新设备。
+
+你的比赛历史、成就和朋友列表保持不变。只有未来的活动将来自新追踪器。
+
+## 我可以连接多个追踪器吗？
+
+为防止数据重复，你一次只能有一个活跃的追踪器。如果你在比赛中途切换设备，你的得分将反映两个追踪器的合并活动（已从旧追踪器记录的数据，加上从你新追踪器开始的新数据）。

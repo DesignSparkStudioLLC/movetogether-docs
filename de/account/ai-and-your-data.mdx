@@ -1,0 +1,65 @@
+---
+title: "KI und deine Daten"
+description: "Wie MoveTogether deinen Namen, E-Mail und Identität anonymisiert, bevor Daten Anthropic, ElevenLabs oder Stream für Coach Mo und Moderation erreichen."
+---
+
+Wenn du mit Coach Mo chattest, sprichst du mit einer KI, die auf Drittanbieter-Plattformen aufgebaut ist. Wir haben uns die Zeit genommen, sicherzustellen, dass diese Plattformen nur das bekommen, was sie brauchen, um dir zu helfen – nicht wer du bist.
+
+## Die Kurzfassung
+
+- **Anthropic** (betreibt den Coach-Mo-Chat) erhält nie deinen Namen, die Namen deiner Freunde, deine E-Mail, deinen Benutzernamen oder einen anderen persönlichen Identifikator. Deine Nachrichten und Coach Mos Erinnerung an dich werden vor der Übertragung anonymisiert.
+- **ElevenLabs** (betreibt die Stimme des Support-Agenten auf der Website) erhält nur deinen Vornamen, damit der Agent dich natürlich ansprechen kann. Sonst nichts über dich.
+- **Stream** (betreibt die Inhaltsmoderation in Chats und DMs) erhält überhaupt keine Benutzeridentität. Einreichungen verwenden zufällige IDs.
+
+## Was anonymisiert wird, bevor es Anthropic erreicht
+
+Jede Nachricht, die du an Coach Mo sendest, und jeder Kontextbeitrag, den Coach Mo über dich lädt, durchläuft eine Anonymisierungsschicht, bevor er unsere Server verlässt.
+
+| Art der Info | Was Anthropic tatsächlich sieht |
+|---|---|
+| Dein Name (und Spitznamen) | `[USER_NAME]` |
+| Namen von Freunden / Konkurrenten | `[COMPETITOR_1]`, `[COMPETITOR_2]`, usw. |
+| Deine E-Mail | Nie gesendet |
+| Dein Benutzername | Auf `[USER_NAME]` abgebildet |
+| Deine Aktivitätszahlen (Kalorien, Schritte, Ringe, Minuten) | Echte Zahlen |
+| Deine Wettkampf-Statistiken und Platzierungen | Echte Zahlen |
+
+Die Anonymisierung handhabt auch häufige Spitznamen-Variationen. Wenn dein Name Benjamin ist und du manchmal Ben oder Benny genannt wirst, werden alle drei erfasst.
+
+## Warum dein Name trotzdem erscheint, wenn Coach Mo antwortet
+
+Wenn Mo antwortet, werden echte Namen **auf deinem Gerät** wieder eingefügt – nicht auf unserem Server und nicht von Anthropic. Anthropic generiert eine Antwort, die `[USER_NAME]` enthält; dein Telefon ersetzt den Platzhalter mit deinem echten Namen, bevor es dir die Nachricht zeigt.
+
+Du siehst „Hey Alex, tolle Woche!" – aber Anthropic hat nur „Hey [USER_NAME], tolle Woche!" generiert.
+
+## Coach Mos Gedächtnis ist auch anonymisiert
+
+Coach Mo hat ein Langzeitgedächtnis-System (Files), das sich an Dinge über dich zwischen Gesprächen erinnert – deine Ziele, deine Gewohnheiten, deine Siege. Dieses Gedächtnis wird **in Platzhalter-Form** auf unseren Servern gespeichert. Selbst unsere eigene Datenbank enthält nicht die rehydrierte Version von Mos Gedächtnis.
+
+Wenn du jemals deine Daten exportierst, siehst du die Platzhalter-Version von Mos Gedächtnis, denn das ist, was tatsächlich auf unseren Servern existiert.
+
+## Die ehrliche Ausnahme: Sprache
+
+Der Support-Agent auf movetogetherfitness.com verwendet ElevenLabs für die Sprache. Sprache muss dich beim Namen ansprechen, um natürlich zu klingen – „Hey Alex, wobei kann ich helfen?" funktioniert; „Hey [USER_NAME]" offensichtlich nicht.
+
+Also wenn du auf der Website per Sprache mit Mo chattest, erhält ElevenLabs:
+
+- Deinen Vornamen
+- Eine anonyme Benutzer-ID, damit der Agent dein Konto bei Bedarf für Aktionen (wie das Wiederherstellen eines Abonnements) nachschlagen kann
+- Deine gewählte Coaching-Persona
+
+Er erhält **nicht** deine E-Mail, deinen Nachnamen, die Namen deiner Freunde, deine Aktivitätsdaten, deine Wettkampfhistorie oder deine Chat-Historie aus vergangenen Gesprächen.
+
+ElevenLabs wird auch direkt aus deinem Browser kontaktiert, nicht über unser Backend, sodass wir keine Zwischenschicht hinzufügen, die zusätzliche Daten protokollieren könnte.
+
+## Inhaltsmoderation
+
+Wenn du in einem Wettkampf-Gruppenchat postest oder eine Direktnachricht sendest, wird der Inhalt von Stream auf Belästigung, Hassrede und andere Richtlinienverstöße gescannt. Stream erhält **nur den Text**. Keine Benutzeridentität, keine Kontoinformationen, keine Metadaten. Einreichungen werden mit zufälligen IDs und einer generischen „System"-Zuschreibung markiert.
+
+## Was das für dich bedeutet
+
+- Deine echte Identität bleibt zwischen dir und unseren Servern.
+- KI-Anbieter erhalten nur, was zur Hilfe nötig ist, in der Form, die sie brauchen.
+- Selbst die Daten, die wir an Anbieter senden, denen wir vertrauen – wie Anthropic – werden zuerst anonymisiert. Verteidigung in der Tiefe.
+
+Für die vollständige Liste der Drittanbieter-Dienste und was jeder tut, siehe [Deine Daten und Datenschutz](/account/data-and-privacy).

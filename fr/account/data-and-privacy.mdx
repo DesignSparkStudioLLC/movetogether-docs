@@ -1,0 +1,60 @@
+---
+title: "Vos données et confidentialité"
+description: "Quelles données MoveTogether collecte, comment les données fitness et de compétition sont stockées et sécurisées, qui peut les voir, et comment télécharger ou supprimer votre compte."
+---
+
+## Quelles données MoveTogether collecte
+
+**Informations de compte.** Votre nom, adresse e-mail, nom d'utilisateur et photo de profil, fournis par vous lors de la création d'un compte.
+
+**Données fitness.** Pas, calories actives, minutes d'exercice et informations d'entraînement, synchronisés depuis votre tracker fitness connecté.
+
+**Données de compétition.** Vos scores de compétition, classements et historique de participation.
+
+**Données d'utilisation.** Analyses anonymes sur la façon dont vous utilisez l'application, utilisées pour améliorer MoveTogether. Vous pouvez vous désinscrire dans **Paramètres → Confidentialité**.
+
+## Comment vos données fitness sont gérées
+
+MoveTogether stocke vos données fitness sur nos serveurs pour alimenter les fonctionnalités principales de l'application : classements, compétitions, fils d'activité, accomplissements et plus. Pour les utilisateurs d'Apple Watch, les données sont lues depuis Apple Health sur votre appareil et envoyées à nos serveurs. Pour les autres trackers, les données sont synchronisées depuis les serveurs du fournisseur du tracker via des connexions OAuth à travers notre partenaire d'intégration, OpenWearables.
+
+Les scores de compétition sont calculés côté serveur pour la sécurité et l'équité. Vos données de santé restent dans Apple Health (ou la plateforme de votre tracker) comme source originale de vérité. MoveTogether les lit. Nous ne les modifions jamais.
+
+## Qui peut voir vos données ?
+
+Les participants de la compétition peuvent voir vos statistiques liées à la compétition dans le classement, sous réserve de vos paramètres de confidentialité. Les amis peuvent voir votre activité dans le fil social, sous réserve de vos paramètres de confidentialité. Les systèmes de MoveTogether traitent vos données pour calculer les scores de compétition et générer des accomplissements. Nous ne vendons jamais vos informations personnelles et ne partageons jamais vos données de santé brutes avec des tiers.
+
+## Ce que voient les fournisseurs d'IA
+
+Coach Mo et l'agent d'assistance sont construits sur des plateformes d'IA tierces. Nous **anonymisons vos informations personnelles avant qu'elles n'atteignent ces fournisseurs** — votre nom, les noms de vos amis, votre e-mail et votre nom d'utilisateur sont tous remplacés par des espaces réservés avant la transmission. Les fournisseurs d'IA voient vos chiffres d'activité et statistiques, pas qui vous êtes.
+
+Pour le détail complet de comment cela fonctionne, y compris l'unique exception honnête pour la voix, voir [L'IA et vos données](/account/ai-and-your-data).
+
+## Stockage et sécurité des données
+
+Vos données sont stockées avec un chiffrement standard de l'industrie. Toutes les connexions entre votre appareil et nos serveurs sont chiffrées. Les scores de compétition sont calculés côté serveur pour prévenir la manipulation. Notre modèle de sécurité signifie que vos données ne sont accessibles que via des requêtes serveur authentifiées et validées.
+
+## Télécharger vos données
+
+Vous pouvez demander une copie de toutes les données que MoveTogether a sur vous. Allez dans **Paramètres → Confidentialité → Télécharger mes données**, appuyez sur le bouton pour demander une exportation, et vous recevrez un e-mail avec un lien de téléchargement quand votre exportation est prête (généralement dans les 24 à 48 heures).
+
+## Supprimer vos données
+
+Pour supprimer votre compte et toutes les données associées, allez dans **Paramètres → Confidentialité → Supprimer mon compte** (ou **Paramètres → Compte → Supprimer le compte**), confirmez votre identité si demandé, et confirmez. C'est permanent et ne peut pas être annulé. Toutes vos données seront supprimées.
+
+## Services tiers
+
+MoveTogether utilise ces services tiers pour fonctionner :
+
+| Service | But |
+|---------|---------|
+| Supabase | Base de données et infrastructure serveur |
+| RevenueCat | Gestion des abonnements |
+| OneSignal | Notifications push |
+| Anthropic Claude | Alimente l'IA Coach Mo (reçoit uniquement des données anonymisées — voir [L'IA et vos données](/account/ai-and-your-data)) |
+| OpenWearables | Intégration de données de santé pour trackers tiers |
+| Hive | Modération de contenu (texte et image) |
+| Stream | Infrastructure du fil d'activité |
+| Sentry | Suivi des erreurs et surveillance des performances |
+| Mixpanel | Analyses produit anonymes |
+
+Chaque service a sa propre politique de confidentialité. Pour les détails complets, lisez notre [Politique de confidentialité](https://movetogetherfitness.com/privacy).

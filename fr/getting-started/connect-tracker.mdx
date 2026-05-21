@@ -1,0 +1,78 @@
+---
+title: "Connecter votre tracker fitness"
+description: "Comment connecter Apple Watch, Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto ou Ultrahuman à MoveTogether via Apple Health ou une connexion OAuth."
+---
+
+## Appareils pris en charge
+
+MoveTogether fonctionne avec les plateformes fitness suivantes via OpenWearables, notre partenaire d'intégration des données de santé :
+
+| Appareil / Plateforme | Méthode de connexion |
+|-------------------|-------------------|
+| Apple Watch | Apple Health (natif sur l'appareil) |
+| Fitbit | Connexion OAuth |
+| Garmin | Connexion OAuth |
+| WHOOP | Connexion OAuth |
+| Oura Ring | Connexion OAuth |
+| Strava | Connexion OAuth |
+| Polar | Connexion OAuth |
+| Suunto | Connexion OAuth |
+| Ultrahuman | Connexion OAuth |
+
+## Comment fonctionnent les connexions
+
+Apple Watch se connecte via Apple Health. MoveTogether lit vos données fitness directement depuis l'application Santé sur votre iPhone. Votre Apple Watch se synchronise avec Apple Health par elle-même, et MoveTogether lit depuis là.
+
+Tous les autres trackers se connectent via une connexion OAuth. Vous vous connectez au compte de votre tracker depuis MoveTogether, ce qui autorise l'application à synchroniser vos données fitness. Vos identifiants de connexion ne sont jamais stockés sur nos serveurs. La connexion passe par le propre système d'autorisation de votre tracker.
+
+## Connexion d'Apple Watch
+
+1. Ouvrez MoveTogether et allez dans **Paramètres → Appareils connectés**.
+2. Appuyez sur **Apple Watch**.
+3. Une invite vous demande d'accorder à MoveTogether l'autorisation de lire vos données Apple Health. Appuyez sur **Tout autoriser** (ou choisissez des catégories spécifiques).
+4. Votre activité commence à se synchroniser.
+
+<Note>
+  MoveTogether a besoin d'un accès en lecture aux catégories Apple Health, notamment Pas, Énergie active (Calories), Minutes d'exercice et Entraînements. Si vous refusez ces autorisations, votre activité n'apparaîtra pas dans les compétitions.
+</Note>
+
+Si l'invite d'autorisations n'apparaît pas, ouvrez l'application Réglages sur votre iPhone (pas MoveTogether), faites défiler vers le bas et appuyez sur **Santé**, appuyez sur **Accès aux données et appareils**, trouvez MoveTogether dans la liste, et activez les catégories de données que vous souhaitez partager.
+
+## Connexion d'autres trackers
+
+Même processus pour Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto et Ultrahuman :
+
+1. Ouvrez MoveTogether et allez dans **Paramètres → Appareils connectés**.
+2. Appuyez sur le nom de votre tracker.
+3. Vous serez envoyé vers la page de connexion de votre tracker. Connectez-vous avec votre compte.
+4. Vérifiez les autorisations et appuyez sur **Autoriser** pour autoriser MoveTogether.
+5. Vos données commencent à se synchroniser. La première synchronisation peut prendre quelques minutes.
+
+<Tip>
+  Ouvrez l'application compagnon de votre tracker et laissez-la se synchroniser avec votre appareil avant de vous connecter à MoveTogether. Ainsi, vos dernières données sont prêtes.
+</Tip>
+
+## Quelles données sont synchronisées ?
+
+| Type de donnée | Utilisé pour |
+|-----------|----------|
+| Pas | Notation Nombre de pas, anneau Pas |
+| Calories actives | Notation Valeurs brutes, anneau Mouvement |
+| Minutes d'exercice | Notation Entraînement, anneau Exercice |
+| Entraînements | Notation Basée sur l'entraînement, fil d'activité |
+
+## À quelle fréquence les données se synchronisent-elles ?
+
+**Apple Watch :** En quelques minutes, puisqu'elles sont lues directement depuis Apple Health sur votre appareil. Une synchronisation en arrière-plan s'exécute également périodiquement pour garder les choses à jour lorsque vous n'utilisez pas activement l'application.
+
+**Tous les autres trackers :** Généralement toutes les 15 à 30 minutes. La fréquence exacte dépend de la fréquence à laquelle l'application compagnon de votre tracker se synchronise avec ses propres serveurs. Faites glisser vers le bas pour rafraîchir sur les écrans de classement afin de demander les dernières données.
+
+## Changer de tracker
+
+Si vous obtenez un nouveau wearable ou souhaitez changer de tracker, allez dans **Paramètres → Appareils connectés**, appuyez sur votre tracker actuel et sélectionnez **Déconnecter**, puis connectez votre nouvel appareil en suivant les étapes ci-dessus.
+
+Votre historique de compétitions, vos récompenses et votre liste d'amis restent intacts. Seule l'activité future viendra du nouveau tracker.
+
+## Puis-je connecter plusieurs trackers ?
+
+Vous ne pouvez avoir qu'un tracker actif à la fois, pour éviter les données en double. Si vous changez d'appareil en plein milieu d'une compétition, votre score reflétera l'activité combinée des deux trackers (les données déjà enregistrées depuis votre ancien tracker, plus les nouvelles données depuis votre nouveau tracker à partir de ce moment).
