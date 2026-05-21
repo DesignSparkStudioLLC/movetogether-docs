@@ -1,0 +1,78 @@
+---
+title: "Conectar tu pulsera de actividad"
+description: "Cómo conectar tu wearable a MoveTogether, qué datos se sincronizan y cómo cambiar de pulsera."
+---
+
+## Dispositivos compatibles
+
+MoveTogether funciona con las siguientes plataformas de fitness a través de OpenWearables, nuestro socio de integración de datos de salud:
+
+| Dispositivo / Plataforma | Método de conexión |
+|-------------------|-------------------|
+| Apple Watch | Apple Salud (nativo en el dispositivo) |
+| Fitbit | Inicio de sesión OAuth |
+| Garmin | Inicio de sesión OAuth |
+| WHOOP | Inicio de sesión OAuth |
+| Anillo Oura | Inicio de sesión OAuth |
+| Strava | Inicio de sesión OAuth |
+| Polar | Inicio de sesión OAuth |
+| Suunto | Inicio de sesión OAuth |
+| Ultrahuman | Inicio de sesión OAuth |
+
+## Cómo funcionan las conexiones
+
+Apple Watch se conecta a través de Apple Salud. MoveTogether lee tus datos de fitness directamente desde la app Salud de tu iPhone. Tu Apple Watch sincroniza con Apple Salud por su cuenta, y MoveTogether lee desde ahí.
+
+Todas las demás pulseras se conectan mediante un inicio de sesión OAuth. Inicias sesión en la cuenta de tu pulsera dentro de MoveTogether, lo que autoriza a la app a sincronizar tus datos de fitness. Tus credenciales de acceso nunca se guardan en nuestros servidores. La conexión se hace a través del propio sistema de autorización de tu pulsera.
+
+## Conectar Apple Watch
+
+1. Abre MoveTogether y ve a **Ajustes → Dispositivos conectados**.
+2. Toca **Apple Watch**.
+3. Aparecerá una solicitud para conceder a MoveTogether permiso para leer tus datos de Apple Salud. Toca **Permitir todo** (o elige categorías específicas).
+4. Tu actividad empezará a sincronizarse.
+
+<Note>
+  MoveTogether necesita acceso de lectura a las categorías de Apple Salud, incluidas Pasos, Energía activa (calorías), Minutos de ejercicio y Entrenamientos. Si deniegas estos permisos, tu actividad no aparecerá en las competiciones.
+</Note>
+
+Si no aparece la solicitud de permisos, abre la app Ajustes de tu iPhone (no MoveTogether), baja y toca **Salud**, toca **Acceso a datos y dispositivos**, busca MoveTogether en la lista y activa las categorías de datos que quieras compartir.
+
+## Conectar otras pulseras
+
+Mismo proceso para Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto y Ultrahuman:
+
+1. Abre MoveTogether y ve a **Ajustes → Dispositivos conectados**.
+2. Toca el nombre de tu pulsera.
+3. Se te redirigirá a la página de inicio de sesión de tu pulsera. Inicia sesión con tu cuenta.
+4. Revisa los permisos y toca **Permitir** para autorizar a MoveTogether.
+5. Tus datos empezarán a sincronizarse. La primera sincronización puede tardar unos minutos.
+
+<Tip>
+  Abre la app complementaria de tu pulsera y deja que se sincronice con tu dispositivo antes de conectarla a MoveTogether. Así tus datos más recientes están listos.
+</Tip>
+
+## ¿Qué datos se sincronizan?
+
+| Tipo de dato | Uso |
+|-----------|----------|
+| Pasos | Puntuación por conteo de pasos, anillo de Pasos |
+| Calorías activas | Puntuación por números brutos, anillo de Movimiento |
+| Minutos de ejercicio | Puntuación por entrenamiento, anillo de Ejercicio |
+| Entrenamientos | Puntuación basada en entrenamientos, feed de actividad |
+
+## ¿Con qué frecuencia se sincronizan los datos?
+
+**Apple Watch:** En cuestión de minutos, ya que se leen directamente desde Apple Salud en tu dispositivo. También se ejecuta una sincronización en segundo plano periódicamente para mantenerlo todo al día cuando no estás usando la app.
+
+**Todas las demás pulseras:** Habitualmente cada 15 a 30 minutos. La frecuencia exacta depende de cada cuánto la app complementaria de tu pulsera se sincroniza con sus propios servidores. Tira hacia abajo en las pantallas de clasificación para solicitar los datos más recientes.
+
+## Cambiar de pulsera
+
+Si compras un nuevo wearable o quieres cambiar de pulsera, ve a **Ajustes → Dispositivos conectados**, toca tu pulsera actual y selecciona **Desconectar**, luego conecta tu nuevo dispositivo con los pasos anteriores.
+
+Tu historial de competiciones, los logros y la lista de amigos se mantienen intactos. Solo la actividad futura vendrá de la nueva pulsera.
+
+## ¿Puedo conectar varias pulseras?
+
+Solo puedes tener una pulsera activa a la vez, para evitar datos duplicados. Si cambias de dispositivo a mitad de una competición, tu puntuación reflejará la actividad combinada de ambas pulseras (los datos ya registrados de la antigua, más los nuevos de la nueva a partir de ese momento).
