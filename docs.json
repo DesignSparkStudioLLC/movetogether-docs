@@ -8,6 +8,25 @@
     "dark": "#D6063E"
   },
   "favicon": "/favicon.png",
+  "fonts": {
+    "heading": {
+      "family": "Stack Sans Headline",
+      "source": "google"
+    },
+    "body": {
+      "family": "DM Sans",
+      "source": "google"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "og:image": "https://docs.movetogetherfitness.com/images/og.png",
+      "og:image:width": "1200",
+      "og:image:height": "630",
+      "twitter:image": "https://docs.movetogetherfitness.com/images/og.png",
+      "twitter:card": "summary_large_image"
+    }
+  },
   "navigation": {
     "tabs": [
       {
