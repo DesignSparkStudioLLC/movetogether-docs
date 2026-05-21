@@ -25,6 +25,11 @@
       "twitter:card": "summary_large_image"
     }
   },
+  "integrations": {
+    "gtm": {
+      "tagId": "GTM-N8T99VWS"
+    }
+  },
   "navigation": {
     "tabs": [
       {
