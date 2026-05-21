@@ -1,0 +1,60 @@
+---
+title: "Your data and privacy"
+description: "What data MoveTogether collects, how it's stored, and your rights."
+---
+
+## What data MoveTogether collects
+
+**Account information.** Your name, email address, username, and profile photo, provided by you when you create an account.
+
+**Fitness data.** Steps, active calories, exercise minutes, and workout information, synced from your connected fitness tracker.
+
+**Competition data.** Your competition scores, rankings, and participation history.
+
+**Usage data.** Anonymous analytics about how you use the app, used to improve MoveTogether. You can opt out in **Settings → Privacy**.
+
+## How your fitness data is handled
+
+MoveTogether stores your fitness data on our servers to power the app's core features: leaderboards, competitions, activity feeds, achievements, and more. For Apple Watch users, data is read from Apple Health on your device and sent to our servers. For other trackers, data is synced from the tracker provider's servers via OAuth connections through our integration partner, OpenWearables.
+
+Competition scores are calculated server-side for security and fairness. Your health data stays in Apple Health (or your tracker's platform) as the original source of truth. MoveTogether reads it. We never modify it.
+
+## Who can see your data?
+
+Competition participants can see your competition-related stats on the leaderboard, subject to your privacy settings. Friends can see your activity in the social feed, subject to your privacy settings. MoveTogether's systems process your data to calculate competition scores and generate achievements. We never sell your personal information or share your raw health data with third parties.
+
+## What AI providers see
+
+Coach Mo and the support agent are built on third-party AI platforms. We **redact your personal information before any of it reaches those providers** — your name, your friends' names, your email, and your username are all replaced with placeholders before transmission. AI providers see your activity numbers and stats, not who you are.
+
+For the full breakdown of how this works, including the one honest exception for voice, see [AI and your data](/en/account/ai-and-your-data).
+
+## Data storage and security
+
+Your data is stored using industry-standard encryption. All connections between your device and our servers are encrypted. Competition scores are calculated server-side to prevent manipulation. Our security model means your data is only accessible through authenticated, validated server requests.
+
+## Downloading your data
+
+You can request a copy of all the data MoveTogether has about you. Go to **Settings → Privacy → Download My Data**, tap the button to request an export, and you'll get an email with a download link when your export is ready (usually within 24 to 48 hours).
+
+## Deleting your data
+
+To delete your account and all associated data, go to **Settings → Privacy → Delete My Account** (or **Settings → Account → Delete Account**), confirm your identity if asked, and confirm. This is permanent and can't be undone. All of your data will be deleted.
+
+## Third-party services
+
+MoveTogether uses these third-party services to operate:
+
+| Service | Purpose |
+|---------|---------|
+| Supabase | Database and server infrastructure |
+| RevenueCat | Subscription management |
+| OneSignal | Push notifications |
+| Anthropic Claude | Powers Coach Mo AI (receives anonymized data only — see [AI and your data](/en/account/ai-and-your-data)) |
+| OpenWearables | Health data integration for third-party trackers |
+| Hive | Content moderation (text and image) |
+| Stream | Activity feed infrastructure |
+| Sentry | Error tracking and performance monitoring |
+| Mixpanel | Anonymous product analytics |
+
+Each service has their own privacy policy. For full details, read our [Privacy Policy](https://movetogetherfitness.com/privacy).

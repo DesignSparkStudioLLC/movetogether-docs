@@ -1,0 +1,65 @@
+---
+title: "AI and your data"
+description: "What MoveTogether sends to our AI providers — and what we don't."
+---
+
+When you chat with Coach Mo, you're talking to AI built on third-party platforms. We took time to make sure those platforms only get what they need to help you — not who you are.
+
+## The short version
+
+- **Anthropic** (powers Coach Mo chat) never receives your name, your friends' names, your email, your username, or any other personal identifier. Your messages and Coach Mo's memory of you are anonymized before transmission.
+- **ElevenLabs** (powers the support agent's voice on the website) receives your first name only, so the agent can address you naturally. Nothing else about you.
+- **Stream** (powers content moderation in chats and DMs) receives no user identity at all. Submissions use random IDs.
+
+## What gets redacted before reaching Anthropic
+
+Every message you send to Coach Mo, and every piece of context Coach Mo loads about you, runs through a redaction layer before it leaves our servers.
+
+| Type of info | What Anthropic actually sees |
+|---|---|
+| Your name (and nicknames) | `[USER_NAME]` |
+| Friends' / competitors' names | `[COMPETITOR_1]`, `[COMPETITOR_2]`, etc. |
+| Your email | Never sent |
+| Your username | Mapped to `[USER_NAME]` |
+| Your activity numbers (calories, steps, rings, minutes) | Real numbers |
+| Your competition stats and standings | Real numbers |
+
+The redaction handles common nickname variations too. If your name is Benjamin and you sometimes go by Ben or Benny, all three get caught.
+
+## Why your name still appears when Coach Mo replies
+
+When Mo responds, real names are stitched back in **on your device** — not on our server, and not by Anthropic. Anthropic generates a response that contains `[USER_NAME]`; your phone replaces the placeholder with your real name before showing the message to you.
+
+You see "Hey Samuel, great week!" — but Anthropic only ever generated "Hey [USER_NAME], great week!"
+
+## Coach Mo's memory is also anonymized
+
+Coach Mo has a long-term memory system (Files) that remembers things about you between conversations — your goals, your habits, your wins. That memory is stored on our servers **in placeholder form**. Even our own database doesn't hold the rehydrated version of Mo's memory.
+
+If you ever export your data, you'll see the placeholder version of Mo's memory, because that's what actually exists on our servers.
+
+## The honest exception: voice
+
+The support agent on movetogetherfitness.com uses ElevenLabs for voice. Voice needs to call you by name to sound natural — "Hey Samuel, what can I help with?" works; "Hey [USER_NAME]" obviously doesn't.
+
+So when you chat with Mo on the website by voice, ElevenLabs receives:
+
+- Your first name
+- An anonymous user ID so the agent can look up your account when needed for actions (like restoring a subscription)
+- Your chosen coaching persona
+
+It does **not** receive your email, your last name, your friends' names, your activity data, your competition history, or your chat history from past conversations.
+
+ElevenLabs is also contacted directly from your browser, not through our backend, so we're not adding a layer in the middle that could log extra data.
+
+## Content moderation
+
+When you post in a competition group chat or send a direct message, the content is scanned by Stream for harassment, hate speech, and other guideline violations. Stream receives **the text only**. No user identity, no account information, no metadata. Submissions are tagged with random IDs and a generic "system" attribution.
+
+## What this means for you
+
+- Your real identity stays between you and our servers.
+- AI providers only get what's needed to help you, in the form they need it.
+- Even the data we send to providers we trust — like Anthropic — is anonymized first. Defense in depth.
+
+For the full list of third-party services and what each one does, see [Your data and privacy](/en/account/data-and-privacy).

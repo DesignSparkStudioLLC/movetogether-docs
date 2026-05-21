@@ -1,0 +1,78 @@
+---
+title: "Conectar tu rastreador de fitness"
+description: "Cómo conectar tu dispositivo wearable a MoveTogether, qué datos se sincronizan y cómo cambiar de rastreador."
+---
+
+## Dispositivos compatibles
+
+MoveTogether funciona con las siguientes plataformas de fitness a través de OpenWearables, nuestro socio de integración de datos de salud:
+
+| Dispositivo / Plataforma | Método de conexión |
+|-------------------|-------------------|
+| Apple Watch | Apple Health (nativo en el dispositivo) |
+| Fitbit | Inicio de sesión OAuth |
+| Garmin | Inicio de sesión OAuth |
+| WHOOP | Inicio de sesión OAuth |
+| Oura Ring | Inicio de sesión OAuth |
+| Strava | Inicio de sesión OAuth |
+| Polar | Inicio de sesión OAuth |
+| Suunto | Inicio de sesión OAuth |
+| Ultrahuman | Inicio de sesión OAuth |
+
+## Cómo funcionan las conexiones
+
+Apple Watch se conecta a través de Apple Health. MoveTogether lee tus datos de fitness directamente desde la aplicación Salud en tu iPhone. Tu Apple Watch se sincroniza con Apple Health por su cuenta, y MoveTogether lee desde ahí.
+
+Todos los demás rastreadores se conectan mediante inicio de sesión OAuth. Inicias sesión en la cuenta de tu rastreador dentro de MoveTogether, lo cual autoriza a la aplicación a sincronizar tus datos de fitness. Tus credenciales de acceso nunca se almacenan en nuestros servidores. La conexión se realiza a través del propio sistema de autorización de tu rastreador.
+
+## Conectar Apple Watch
+
+1. Abre MoveTogether y ve a **Ajustes → Dispositivos conectados**.
+2. Toca **Apple Watch**.
+3. Aparecerá un aviso para que concedas permiso a MoveTogether para leer tus datos de Apple Health. Toca **Permitir todo** (o elige categorías específicas).
+4. Tu actividad empezará a sincronizarse.
+
+<Note>
+  MoveTogether necesita acceso de lectura a categorías de Apple Health que incluyen pasos, energía activa (calorías), minutos de ejercicio y entrenamientos. Si deniegas estos permisos, tu actividad no aparecerá en las competiciones.
+</Note>
+
+Si no aparece el aviso de permisos, abre la aplicación Ajustes en tu iPhone (no MoveTogether), desplázate hacia abajo y toca **Salud**, toca **Acceso a datos y dispositivos**, encuentra MoveTogether en la lista y activa las categorías de datos que quieras compartir.
+
+## Conectar otros rastreadores
+
+El mismo proceso para Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto y Ultrahuman:
+
+1. Abre MoveTogether y ve a **Ajustes → Dispositivos conectados**.
+2. Toca el nombre de tu rastreador.
+3. Se te enviará a la página de inicio de sesión de tu rastreador. Inicia sesión con tu cuenta.
+4. Revisa los permisos y toca **Permitir** para autorizar a MoveTogether.
+5. Tus datos empezarán a sincronizarse. La primera sincronización puede tardar unos minutos.
+
+<Tip>
+  Abre la aplicación complementaria de tu rastreador y deja que se sincronice con tu dispositivo antes de conectar con MoveTogether. Así tus últimos datos estarán listos.
+</Tip>
+
+## ¿Qué datos se sincronizan?
+
+| Tipo de dato | Usado para |
+|-----------|----------|
+| Pasos | Puntuación por recuento de pasos, anillo de pasos |
+| Calorías activas | Puntuación por números brutos, anillo de movimiento |
+| Minutos de ejercicio | Puntuación por entrenamiento, anillo de ejercicio |
+| Entrenamientos | Puntuación basada en entrenamientos, feed de actividad |
+
+## ¿Con qué frecuencia se sincronizan los datos?
+
+**Apple Watch:** En cuestión de minutos, ya que se lee directamente desde Apple Health en tu dispositivo. También se ejecuta una sincronización en segundo plano de forma periódica para mantener todo al día cuando no estás usando la aplicación activamente.
+
+**Todos los demás rastreadores:** Normalmente cada 15 a 30 minutos. La frecuencia exacta depende de cada cuánto la aplicación complementaria de tu rastreador se sincroniza con sus propios servidores. Tira hacia abajo en las pantallas de clasificación para solicitar los datos más recientes.
+
+## Cambiar de rastreador
+
+Si consigues un nuevo wearable o quieres cambiar de rastreador, ve a **Ajustes → Dispositivos conectados**, toca tu rastreador actual y selecciona **Desconectar**, luego conecta tu nuevo dispositivo siguiendo los pasos anteriores.
+
+Tu historial de competiciones, logros y lista de amigos se mantienen intactos. Solo la actividad futura vendrá del nuevo rastreador.
+
+## ¿Puedo conectar varios rastreadores?
+
+Solo puedes tener un rastreador activo a la vez, para evitar datos duplicados. Si cambias de dispositivo a mitad de una competición, tu puntuación reflejará la actividad combinada de ambos rastreadores (datos ya registrados con tu antiguo rastreador, más los nuevos datos de tu nuevo rastreador a partir de ese momento).
