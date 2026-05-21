@@ -10,12 +10,10 @@
   "favicon": "/favicon.png",
   "fonts": {
     "heading": {
-      "family": "Stack Sans Headline",
-      "source": "google"
+      "family": "Stack Sans Headline"
     },
     "body": {
-      "family": "DM Sans",
-      "source": "google"
+      "family": "DM Sans"
     }
   },
   "seo": {
