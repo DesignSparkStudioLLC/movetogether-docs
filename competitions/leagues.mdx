@@ -14,19 +14,21 @@ Leagues are free for everyone — no paywall, no opt-in. Open the app and log ac
 You start at **Walker** when you sign up and climb naturally as you compete. Tier badges are cosmetic — they signal where you stand but don't unlock or restrict any features.
 
 | # | Tier | Promote (top N) | Demote (bottom 5) |
-|---|------|-----------------|-------------------|
-| 1 | Walker    | Top 15 | — (can't drop below) |
-| 2 | Jogger    | Top 12 | Bottom 5 |
-| 3 | Runner    | Top 10 | Bottom 5 |
-| 4 | Strider   | Top 9  | Bottom 5 |
-| 5 | Athlete   | Top 8  | Bottom 5 |
-| 6 | Sprinter  | Top 7  | Bottom 5 |
-| 7 | Champion  | Top 6  | Bottom 5 |
-| 8 | Elite     | Top 5  | Bottom 5 |
-| 9 | Master    | Top 3  | Bottom 5 |
-| 10 | Legend   | — (top of the ladder) | Bottom 5 |
+| --- | --- | --- | --- |
+| 1 | Walker | Top 15 | — (can't drop below) |
+| 2 | Jogger | Top 12 | Bottom 5 |
+| 3 | Runner | Top 10 | Bottom 5 |
+| 4 | Strider | Top 9 | Bottom 5 |
+| 5 | Athlete | Top 8 | Bottom 5 |
+| 6 | Sprinter | Top 7 | Bottom 5 |
+| 7 | Champion | Top 6 | Bottom 5 |
+| 8 | Elite | Top 5 | Bottom 5 |
+| 9 | Master | Top 3 | Bottom 5 |
+| 10 | Legend | — (top of the ladder) | Bottom 5 |
 
-Walker is friendly on purpose — half the cohort promotes, so new movers feel forward motion right away. The bar tightens as you climb. Legend is the top tier, so no one promotes out of it, but the bottom 5 still drop back to Master each week. Holding Legend takes real effort.
+The promote counts above are the **maximums**, reached when a cohort is full (around 30 movers). Promotion is always capped at **half the cohort**, so smaller groups promote proportionally fewer — a 10-person Jogger cohort promotes its top 5, not 12. Demotion scales down the same way in small cohorts, and there's always at least one safe spot in the middle.
+
+Walker is friendly on purpose — up to half the cohort promotes, so new movers feel forward motion right away. The bar tightens as you climb. Legend is the top tier, so no one promotes out of it, but the bottom 5 still drop back to Master each week. Holding Legend takes real effort.
 
 ## How a week works
 
@@ -44,11 +46,15 @@ The reset is the same instant worldwide. If you're in Tokyo, your week starts Mo
 
 Your rank inside the cohort updates **live** as you log activity. Pull to refresh, or just reopen the screen. Each row in the cohort list is tinted by where that person would land if the week ended right now: green for promotion, red for demotion, untinted for safe.
 
+### Quiet weeks
+
+Leagues only shuffle tiers when there's a real race. If a cohort has too few movers in it that week, no one promotes or demotes — everyone holds their tier until the group fills out. When that's the case, your League card says so instead of showing a promotion or demotion zone.
+
 ## How scoring works
 
 Move Leagues uses a single, straightforward formula across the full week:
 
-```
+```text
 points = move calories + exercise minutes + (step count ÷ 100)
 ```
 
@@ -64,7 +70,7 @@ The Friends leaderboard (daily) and the Global leaderboard (top 100 weekly) use 
 
 Every row in your cohort sits in one of three zones, based on current rank:
 
-- 🟢 **Promotion zone** — top N of the cohort (varies by tier). You'll move up next Monday.
+- 🟢 **Promotion zone** — top N of the cohort (up to half the group, varies by tier). You'll move up next Monday.
 - ⚪ **Safety zone** — middle of the cohort. You'll stay in your current tier.
 - 🔴 **Demotion zone** — bottom 5. You'll drop a tier next Monday, unless you have a demotion protection in the bank.
 
