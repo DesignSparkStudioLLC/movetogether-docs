@@ -1,6 +1,6 @@
 ---
 title: "Connecting your fitness tracker"
-description: "How to connect Apple Watch, Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, or Ultrahuman to MoveTogether through Apple Health or OAuth sign-in."
+description: "How to connect Apple Watch, Fitbit, Garmin, WHOOP, Oura, Strava, or Polar to MoveTogether through Apple Health or OAuth sign-in."
 ---
 
 ## Supported devices
@@ -8,7 +8,7 @@ description: "How to connect Apple Watch, Fitbit, Garmin, WHOOP, Oura, Strava, P
 MoveTogether works with the following fitness platforms through OpenWearables, our health data integration partner:
 
 | Device / Platform | Connection method |
-|-------------------|-------------------|
+| --- | --- |
 | Apple Watch | Apple Health (native on-device) |
 | Fitbit | OAuth sign-in |
 | Garmin | OAuth sign-in |
@@ -16,8 +16,10 @@ MoveTogether works with the following fitness platforms through OpenWearables, o
 | Oura Ring | OAuth sign-in |
 | Strava | OAuth sign-in |
 | Polar | OAuth sign-in |
-| Suunto | OAuth sign-in |
-| Ultrahuman | OAuth sign-in |
+
+<Note>
+  Suunto and Ultrahuman are coming soon. They are on the roadmap and are not connectable yet.
+</Note>
 
 ## How connections work
 
@@ -40,7 +42,7 @@ If the permissions prompt doesn't appear, open the Settings app on your iPhone (
 
 ## Connecting other trackers
 
-Same process for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, and Ultrahuman:
+Same process for Fitbit, Garmin, WHOOP, Oura, Strava, and Polar:
 
 1. Open MoveTogether and go to **Settings → Connected Devices**.
 2. Tap the name of your tracker.
@@ -55,7 +57,7 @@ Same process for Fitbit, Garmin, WHOOP, Oura, Strava, Polar, Suunto, and Ultrahu
 ## What data syncs?
 
 | Data type | Used for |
-|-----------|----------|
+| --- | --- |
 | Steps | Step Count scoring, Steps ring |
 | Active calories | Raw Numbers scoring, Move ring |
 | Exercise minutes | Workout scoring, Exercise ring |
@@ -93,4 +95,4 @@ From this screen you can:
 - **Backfill from Apple Health** to pull the last 7 days fresh (helpful after permission changes)
 - **Reconnect** a provider showing PAUSED — usually means an expired token; tap to re-authorize
 - **Disconnect** a provider with a confirmation dialog (also removes their data from your stats)
-- **+ Connect a service** at the top or bottom to add another tracker
+- **\+ Connect a service** at the top or bottom to add another tracker
