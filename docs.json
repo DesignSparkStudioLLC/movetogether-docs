@@ -41,6 +41,7 @@
               "index",
               "getting-started/welcome",
               "getting-started/create-account",
+              "getting-started/language-and-region",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
               "getting-started/setting-goals",
@@ -63,6 +64,9 @@
             "pages": [
               "engagement/streaks-shields",
               "engagement/daily-challenges",
+              "engagement/weekly-challenges",
+              "engagement/morning-brief",
+              "engagement/activity-analytics",
               "engagement/weekly-report",
               "engagement/sharing-your-wins",
               "engagement/seasonal-events"
@@ -76,11 +80,13 @@
               "social-coach/coach-mo",
               "social-coach/coach-mo-capabilities",
               "social-coach/coach-mo-settings",
+              "social-coach/coach-plans-rest-days",
               "social-coach/managing-coach-mo-memory",
               "social-coach/reading-activity-trace",
               "social-coach/roast-mode",
               "social-coach/managing-conversations",
               "social-coach/direct-messaging",
+              "social-coach/chat-announcements-mentions",
               "social-coach/communities"
             ]
           },
@@ -103,6 +109,7 @@
               "account/notifications",
               "account/referrals",
               "account/privacy-settings",
+              "account/ads-and-measurement",
               "account/data-and-privacy",
               "account/ai-and-your-data",
               "account/guidelines-moderation",
@@ -114,6 +121,7 @@
             "group": "Troubleshooting",
             "pages": [
               "troubleshooting/sync-issues",
+              "troubleshooting/data-sources",
               "troubleshooting/competition-issues",
               "troubleshooting/notification-problems",
               "troubleshooting/app-performance",
