@@ -1,0 +1,27 @@
+name: Request Copilot review
+
+# Pilot: request Copilot review when a PR first becomes reviewable and after
+# each pushed update. Remove this file to revert the pilot without changing
+# repository or branch-protection settings.
+on:
+  pull_request:
+    types: [opened, ready_for_review, synchronize]
+
+# The workflow only asks GitHub to add a PR reviewer.
+permissions:
+  pull-requests: write
+
+jobs:
+  request-review:
+    # Draft PRs wait until they emit ready_for_review.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request Copilot pull-request review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/requested_reviewers" \
+            -f 'reviewers[]=copilot-pull-request-reviewer[bot]'
