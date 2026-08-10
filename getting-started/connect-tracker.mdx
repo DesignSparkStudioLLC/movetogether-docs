@@ -1,98 +1,41 @@
 ---
-title: "Connecting your fitness tracker"
-description: "How to connect Apple Watch, Fitbit, Garmin, WHOOP, Oura, Strava, or Polar to MoveTogether through Apple Health or OAuth sign-in."
+title: "Connect a data source"
+description: "Connect Apple Health or a wearable service, and review its sync status in Data Sources."
 ---
 
-## Supported devices
+MoveTogether can use Apple Health or a connected wearable service for activity data. Go to **Settings → Data Sources**, then tap **Connect a service** to begin.
 
-MoveTogether works with the following fitness platforms through OpenWearables, our health data integration partner:
+## Available services
 
-| Device / Platform | Connection method |
-| --- | --- |
-| Apple Watch | Apple Health (native on-device) |
-| Fitbit | OAuth sign-in |
-| Garmin | OAuth sign-in |
-| WHOOP | OAuth sign-in |
-| Oura Ring | OAuth sign-in |
-| Strava | OAuth sign-in |
-| Polar | OAuth sign-in |
+- Apple Health
+- Google Health / Fitbit
+- Garmin
+- WHOOP
+- Strava
+- Polar
+- Oura
+- Ultrahuman
 
-<Note>
-  Suunto and Ultrahuman are coming soon. They are on the roadmap and are not connectable yet.
-</Note>
+Suunto appears in the picker as **Coming soon** and cannot be connected yet. Apple Watch data reaches MoveTogether through Apple Health; the native MoveTogether Apple Watch app is a separate companion experience.
 
-## How connections work
+## Connect and manage
 
-Apple Watch connects through Apple Health. MoveTogether reads your fitness data directly from the Health app on your iPhone. Your Apple Watch syncs to Apple Health on its own, and MoveTogether reads from there.
+1. In **Settings → Data Sources**, tap **Connect a service**.
+2. Select the service and complete its authorization flow.
+3. Return to **Data Sources** to check its status. A paused service can be reconnected; an active service can be disconnected when that option is available.
 
-All other trackers connect through an OAuth sign-in. You sign in to your tracker's account inside MoveTogether, which authorizes the app to sync your fitness data. Your login credentials are never stored on our servers. The connection runs through your tracker's own authorization system.
+### Apple Health
 
-## Connecting Apple Watch
+Apple Health uses the iOS permission sheet rather than a provider login. Allow the categories you want MoveTogether to read, including the activity metrics used by your competitions. To review the choice later, open **iPhone Settings → Health → Data Access & Devices → MoveTogether**.
 
-1. Open MoveTogether and go to **Settings → Connected Devices**.
-2. Tap **Apple Watch**.
-3. A prompt asks you to grant MoveTogether permission to read your Apple Health data. Tap **Allow All** (or pick specific categories).
-4. Your activity starts syncing.
+Your Apple Watch first syncs its data to Apple Health, then MoveTogether reads the authorized categories. If today's activity is missing, confirm the Watch has synced to the Health app before troubleshooting MoveTogether.
 
-<Note>
-  MoveTogether needs read access to Apple Health categories including Steps, Active Energy (Calories), Exercise Minutes, and Workouts. If you deny these permissions, your activity won't appear in competitions.
-</Note>
+### Wearable services
 
-If the permissions prompt doesn't appear, open the Settings app on your iPhone (not MoveTogether), scroll down and tap **Health**, tap **Data Access & Devices**, find MoveTogether in the list, and enable the data categories you want to share.
+Google Health / Fitbit, Garmin, WHOOP, Strava, Polar, Oura, and Ultrahuman use the provider's authorization flow. MoveTogether does not receive or store the password you enter on the provider's sign-in page. The first sync can take time after you return to the app.
 
-## Connecting other trackers
+Open the provider's companion app and let the device finish syncing there before checking MoveTogether. If a connection is paused or expired, use the reconnect action in **Data Sources**.
 
-Same process for Fitbit, Garmin, WHOOP, Oura, Strava, and Polar:
+The screen also shows which sources contribute to health metrics. Do not assume that connecting more than one service will deduplicate the same activity; review your sources and use the connection that best fits your setup.
 
-1. Open MoveTogether and go to **Settings → Connected Devices**.
-2. Tap the name of your tracker.
-3. You'll be sent to your tracker's login page. Sign in with your account.
-4. Review the permissions and tap **Allow** to authorize MoveTogether.
-5. Your data starts syncing. The first sync can take a few minutes.
-
-<Tip>
-  Open your tracker's companion app and let it sync with your device before connecting to MoveTogether. That way your latest data is ready to go.
-</Tip>
-
-## What data syncs?
-
-| Data type | Used for |
-| --- | --- |
-| Steps | Step Count scoring, Steps ring |
-| Active calories | Total Activity and Calorie Burn scoring, Move ring |
-| Exercise minutes | Total Activity and Exercise Minutes scoring, Exercise ring |
-| Workouts | Workout Count scoring, activity feed |
-
-## How often does data sync?
-
-**Apple Watch:** Within minutes, since it's read directly from Apple Health on your device. A background sync also runs periodically to keep things current when you're not actively using the app.
-
-**All other trackers:** Usually every 15 to 30 minutes. The exact frequency depends on how often your tracker's companion app syncs with its own servers. Pull down to refresh on leaderboard screens to request the latest data.
-
-## Switching trackers
-
-If you get a new wearable or want to switch trackers, go to **Settings → Connected Devices**, tap your current tracker and select **Disconnect**, then connect your new device using the steps above.
-
-Your competition history, achievements, and friends list stay intact. Only future activity will come from the new tracker.
-
-## Can I connect multiple trackers?
-
-You can only have one active tracker at a time, to prevent duplicate data. If you switch devices mid-competition, your score will reflect the combined activity from both trackers (data already recorded from your old tracker, plus new data from your new tracker going forward).
-
-## Managing connections in Settings
-
-Go to **Settings → Data Sources** to see everything connected to your account at a glance:
-
-- **Source count and live metric count** at the top
-- **Last synced** timestamp ("Last synced X minutes ago" or "Never synced")
-- **Apple Health** with a CONNECTED pill or a Connect button
-- **OAuth providers** (Fitbit, Garmin, WHOOP, etc.) each with a CONNECTED or PAUSED status pill
-- **Health data card** showing each metric (Calories, Exercise, Distance, Steps, Workouts) with a density meter — a row of dots indicating how many sources are reporting that metric
-
-From this screen you can:
-
-- **Open Apple Health** with the iOS Health app button
-- **Backfill from Apple Health** to pull the last 7 days fresh (helpful after permission changes)
-- **Reconnect** a provider showing PAUSED — usually means an expired token; tap to re-authorize
-- **Disconnect** a provider with a confirmation dialog (also removes their data from your stats)
-- **\+ Connect a service** at the top or bottom to add another tracker
+For help when data is late or missing, see [Troubleshoot data sources](/troubleshooting/data-sources).
