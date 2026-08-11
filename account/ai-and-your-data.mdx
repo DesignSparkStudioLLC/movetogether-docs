@@ -1,15 +1,19 @@
 ---
 title: "AI and your data"
-description: "How Coach Mo and voice features use your information, and the controls available in the app."
+description: "How Coach Mo text, Coach voice, Mo support, and Stream-powered social features handle identity and context."
 ---
+
+MoveTogether uses different service providers for Coach Mo text, Coach voice, Mo support, chat, communities, feeds, and moderation. Each path sends the context needed to operate that feature.
 
 Coach Mo uses relevant fitness context, goals, profile information, and chat messages to provide coaching and reports. Voice features process your spoken audio to transcribe what you say and generate a response.
 
 ## Providers and data
 
-Anthropic (Claude) processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders and Coach text prompts do not include your MoveTogether user ID. Other Anthropic-assisted support workflows may receive the content you submit and the minimum context needed to answer it.
+- **Anthropic** processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders, and Coach text prompts do not include your MoveTogether user ID. Other Anthropic-assisted support workflows may receive the content you submit and the minimum context needed to answer it.
+- **ElevenLabs** powers Coach Mo voice and Mo support. It receives spoken audio or support context, relevant fitness context, your first name, and your user ID.
+- **Stream** powers chat, communities, feeds, and moderation. It receives the identity and content needed to provide those features.
 
-ElevenLabs processes Coach Mo voice and the Mo support assistant. It receives spoken audio, relevant fitness context, your first name, and your user ID. Providers process information on our behalf to provide these features and do not use it to train their own models.
+These providers process information on our behalf to provide these features and do not use it to train their own models.
 
 We do not use health and fitness data for advertising. Voice is not used to create a voiceprint or to identify or authenticate you.
 
@@ -20,3 +24,37 @@ We do not use health and fitness data for advertising. Voice is not used to crea
 - Delete your account from **Settings → Privacy Settings** to request removal of associated account data.
 
 For the complete provider list, retention details, and legal rights, read the [Privacy Policy](https://movetogetherfitness.com/privacy).
+
+## Coach Mo text
+
+Coach Mo text prompts replace direct names with placeholders before being sent to Anthropic. Your MoveTogether user ID is not included in the prompt.
+
+| Type of info | What Anthropic actually sees |
+|---|---|
+| Direct names | Placeholders such as `[USER_NAME]` or `[COMPETITOR_1]` |
+| Your MoveTogether user ID | Not included in the prompt |
+| Your activity numbers (calories, steps, rings, minutes) | Real numbers |
+| Your competition stats and standings | Real numbers |
+
+When personalization is enabled and the data is available, Coach Mo may also receive relevant context about workouts, sleep and recovery, goals, streaks, badges, competitions, weekly history, and rivalries.
+
+## Why your name still appears when Coach Mo replies
+
+The app can replace supported placeholders with familiar names when it displays the response. Anthropic produces the response from the placeholder-redacted prompt.
+
+## Coach voice and Mo support
+
+Coach voice and Mo support use ElevenLabs. To provide a personalized voice or support experience, ElevenLabs receives the relevant audio or support context together with your first name and MoveTogether user ID. Avoid sharing passwords, payment-card details, or other secrets in any AI conversation.
+
+## Content moderation
+
+Stream provides MoveTogether's chat, communities, feeds, and moderation infrastructure. It receives the identity and content needed to deliver those features, associate content with the right account, and enforce community standards.
+
+## What this means for you
+
+- Anthropic text prompts use placeholders for direct names and omit the MoveTogether user ID.
+- ElevenLabs voice and support paths use relevant context, first name, and user ID.
+- Stream receives the identity and content needed for its social and moderation features.
+- You can control Coach Mo personalization and opted-in analytics from **Settings → Privacy Settings**.
+
+For the full list of third-party services and what each one does, see [Your data and privacy](/account/data-and-privacy).
