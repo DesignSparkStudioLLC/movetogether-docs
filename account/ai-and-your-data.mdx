@@ -9,13 +9,11 @@ Coach Mo uses relevant fitness context, goals, profile information, and chat mes
 
 ## Providers and data
 
-Anthropic (Claude) processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders and Coach text prompts do not include your MoveTogether user ID. Other Anthropic-assisted support workflows may receive the content you submit and the minimum context needed to answer it.
-
-- **Anthropic** powers Coach Mo text. Direct names are replaced with placeholders, and your MoveTogether user ID is not included in the prompt. Relevant fitness context may be included when personalization is enabled.
-- **ElevenLabs** powers Coach voice and Mo support. It receives the relevant audio or support context together with your first name and user ID.
+- **Anthropic** processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders, and Coach text prompts do not include your MoveTogether user ID. Other Anthropic-assisted support workflows may receive the content you submit and the minimum context needed to answer it.
+- **ElevenLabs** powers Coach Mo voice and Mo support. It receives spoken audio or support context, relevant fitness context, your first name, and your user ID.
 - **Stream** powers chat, communities, feeds, and moderation. It receives the identity and content needed to provide those features.
 
-ElevenLabs processes Coach Mo voice and the Mo support assistant. It receives spoken audio, relevant fitness context, your first name, and your user ID. Providers process information on our behalf to provide these features and do not use it to train their own models.
+These providers process information on our behalf to provide these features and do not use it to train their own models.
 
 We do not use health and fitness data for advertising. Voice is not used to create a voiceprint or to identify or authenticate you.
 
@@ -26,6 +24,8 @@ We do not use health and fitness data for advertising. Voice is not used to crea
 - Delete your account from **Settings → Privacy Settings** to request removal of associated account data.
 
 For the complete provider list, retention details, and legal rights, read the [Privacy Policy](https://movetogetherfitness.com/privacy).
+
+## Coach Mo text
 
 Coach Mo text prompts replace direct names with placeholders before being sent to Anthropic. Your MoveTogether user ID is not included in the prompt.
 
