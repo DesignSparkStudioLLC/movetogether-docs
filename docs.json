@@ -30,6 +30,13 @@
       "tagId": "GTM-N8T99VWS"
     }
   },
+  "redirects": [
+    {
+      "source": "/getting-started/android-coming-soon",
+      "destination": "/getting-started/android-public-beta",
+      "permanent": true
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -42,7 +49,7 @@
               "getting-started/welcome",
               "getting-started/create-account",
               "getting-started/language-and-region",
-              "getting-started/android-coming-soon",
+              "getting-started/android-public-beta",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
               "getting-started/setting-goals",
