@@ -14,7 +14,9 @@ MoveTogether uses your account, activity, fitness, and social information to pro
 
 ## Connected data
 
-Apple Health data is read with your permission. Connected services can provide activity and health metrics through OpenWearables. You can review connections in **Settings → Data Sources** and revoke Apple Health access in iPhone Settings.
+**Usage data.** If you opt in to app analytics, MoveTogether processes usage events, masked session replay, and diagnostics associated with your persistent account UUID. You can control this in **Settings → Privacy Settings**.
+
+Apple Health and Health Connect data is read with your permission. Connected services can provide activity and health metrics through OpenWearables. You can review connections in **Settings → Data Sources** and revoke on-device health permissions from your phone's settings.
 
 MoveTogether stores the data needed to calculate server-side competition scores, build leaderboards, show activity history, and provide other features. Apple Health or your wearable provider remains the original source of synced fitness data; MoveTogether does not write changes back to that source.
 
@@ -22,11 +24,21 @@ MoveTogether stores the data needed to calculate server-side competition scores,
 
 People in a competition can see leaderboard information and the competition details you share. Friends can see activity you share in social features. The exact profile, activity, health-metric, invitation, and discoverability choices are controlled in **Settings → Privacy Settings**.
 
+MoveTogether stores your fitness data on our servers to power the app's core features: leaderboards, competitions, activity feeds, badges, and more. On iPhone, data can be read from Apple Health. During the Android public beta, data can be read from Health Connect. Other supported trackers sync through OAuth connections using our integration partner, OpenWearables.
+
+Competition scores are calculated server-side for security and fairness. Your health data stays in Apple Health, Health Connect, or your tracker's platform as the original source of truth. MoveTogether reads it. We never modify it.
+
 ## Service providers
 
 MoveTogether uses providers such as Supabase for backend services and OpenWearables for connected wearables. Stream receives user ID, name, avatar, messages, posts, and submitted content for chat and moderation. If you opt in to product analytics, PostHog receives a persistent Supabase account UUID, usage events, masked replays, and crash or performance diagnostics.
 
+Competition participants can see your competition-related stats on the leaderboard, subject to your privacy settings. Friends can see your activity in the social feed, subject to your privacy settings. MoveTogether and its service providers process only the data needed to operate features such as scoring, badges, social features, analytics you opt into, and AI coaching. We never sell your personal or health data.
+
 For Coach Mo text coaching, insights, and reports, Anthropic receives relevant fitness context, messages, and report data; direct names are placeholders and Coach text prompts do not include your MoveTogether user ID. ElevenLabs receives spoken audio, relevant fitness context, first name, and user ID for Coach Mo voice and Mo support. The authoritative provider list is in our [Privacy Policy](https://movetogetherfitness.com/privacy).
+
+Different AI-powered features need different context. For Coach Mo text prompts sent to Anthropic, direct names are replaced with placeholders and your MoveTogether user ID is omitted. Coach voice and Mo support use ElevenLabs and can receive relevant audio or support context together with your first name and user ID.
+
+For a provider-by-provider breakdown, see [AI and your data](/account/ai-and-your-data).
 
 ## Your controls
 
@@ -35,5 +47,34 @@ Open **Settings → Privacy Settings** to manage sharing, friend-request control
 - **Export:** request a copy of the data associated with your account. The app emails a download link when the export is ready.
 - **Delete:** request permanent deletion of your account and associated data. Review the confirmation carefully because this cannot be undone.
 - **Coach Mo:** delete individual conversations, all conversations, or Files from Coach Mo settings without deleting the rest of your account.
+
+Your data is stored using industry-standard encryption. All connections between your device and our servers are encrypted. Competition scores are calculated server-side to prevent manipulation. Our security model means your data is only accessible through authenticated, validated server requests.
+
+## Downloading your data
+
+You can request a copy of all the data MoveTogether has about you. Go to **Settings → Privacy Settings → Download My Data**, tap the button to request an export, and you'll get an email with a download link when it is ready. It usually takes a few minutes, and the link expires after 7 days.
+
+## Deleting your data
+
+To delete your account and all associated data, go to **Settings → Privacy Settings → Delete My Account**, confirm your identity if asked, and confirm. This is permanent and can't be undone. All of your data will be deleted.
+
+## Third-party services
+
+MoveTogether uses these third-party services to operate:
+
+| Service | Purpose |
+|---------|---------|
+| Supabase | Database and server infrastructure |
+| RevenueCat | Subscription management |
+| OneSignal | Push notifications |
+| Anthropic Claude | Powers Coach Mo text; direct names are replaced with placeholders and the MoveTogether user ID is omitted from prompts |
+| ElevenLabs | Powers Coach voice and Mo support using relevant audio or support context, first name, and user ID |
+| OpenWearables | Health data integration for third-party trackers |
+| Hive | Content moderation (text and image) |
+| Stream | Chat, communities, feeds, and moderation using the identity and content those features need |
+| Sentry | Error tracking and performance monitoring |
+| PostHog | Opted-in product analytics, masked session replay, and diagnostics |
+
+Each service has its own privacy policy. For full details, read our [Privacy Policy](https://movetogetherfitness.com/privacy).
 
 See [Privacy Settings](/account/privacy-settings), [AI and your data](/account/ai-and-your-data), and the [Privacy Policy](https://movetogetherfitness.com/privacy) for more detail.
