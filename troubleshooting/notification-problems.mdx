@@ -1,22 +1,29 @@
 ---
 title: "Notification problems"
-description: "How to fix MoveTogether push notification issues — iOS settings, in-app categories, Focus mode, Low Power Mode, and provisional notification delivery."
+description: "How to fix MoveTogether push notification issues with in-app categories and iOS or Android system notification settings."
 ---
 
-## Not receiving any notifications
+## Check in-app notification categories
 
-**Step 1: Check iOS notification settings.** Open **iPhone Settings → MoveTogether → Notifications** and make sure **Allow Notifications** is on with your preferred alert styles enabled.
+Open **MoveTogether → Settings → Notifications** and make sure the categories you want are turned on.
 
-**Step 2: Check in-app notification settings.** Open **MoveTogether → Settings → Notifications** and make sure the categories you want are turned on.
+## Check system notification settings
 
-**Step 3: Check Focus mode.** If you use Do Not Disturb, Work, or Sleep Focus, MoveTogether notifications may be silenced. Check your Focus settings to allow MoveTogether through.
+### iOS
 
-**Step 4: Check Low Power Mode.** Low Power Mode can delay push notifications.
+1. Open **iPhone Settings → MoveTogether → Notifications**.
+2. Make sure **Allow Notifications** is on and select your preferred alert styles.
+3. If you use Do Not Disturb, Work, or Sleep Focus, review Focus settings to allow MoveTogether through.
+4. Check whether Low Power Mode is delaying delivery.
 
 <Note>
-  MoveTogether uses provisional notification delivery by default. If you're only seeing quiet notifications in your Notification Center, tap a notification-related feature in the app to be prompted for full notification access (sounds, banners, and badges).
+  MoveTogether can use provisional notification delivery on iOS. If you only see quiet notifications in Notification Center, use a notification-related feature in the app to choose full notification access for sounds, banners, and badges.
 </Note>
+
+### Android public beta
+
+Open MoveTogether's notification settings from the Android app-info/settings surface and allow notifications for the app. Android can expose MoveTogether notification channels by category, so also review the relevant channels there.
 
 ## Getting too many notifications
 
-Go to **Settings → Notifications** in MoveTogether and turn off the categories you don't want.
+Go to **Settings → Notifications** in MoveTogether and turn off the categories you do not want.
