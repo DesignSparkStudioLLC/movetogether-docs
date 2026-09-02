@@ -1,16 +1,16 @@
 ---
 title: "AI and your data"
-description: "How Coach Mo text, Coach voice, Mo support, and Stream-powered social features handle identity and context."
+description: "How Coach Mo text, Coach voice, Marco support, and Stream-powered social features handle identity and context."
 ---
 
-MoveTogether uses different service providers for Coach Mo text, Coach voice, Mo support, chat, communities, feeds, and moderation. Each path sends the context needed to operate that feature.
+MoveTogether uses different service providers for Coach Mo text, Coach voice, Marco support, chat, communities, feeds, and moderation. Each path sends the context needed to operate that feature.
 
 Coach Mo uses relevant fitness context, goals, profile information, and chat messages to provide coaching and reports. Voice features process your spoken audio to transcribe what you say and generate a response.
 
 ## Providers and data
 
 - **Anthropic** processes Coach Mo text coaching, insights, and reports using the relevant fitness context, messages, and report data needed for the feature. Direct names are replaced with placeholders, and Coach text prompts do not include your MoveTogether user ID. Other Anthropic-assisted support workflows may receive the content you submit and the minimum context needed to answer it.
-- **ElevenLabs** powers Coach Mo voice and Mo support. It receives spoken audio or support context, relevant fitness context, your first name, and your user ID.
+- **ElevenLabs** powers Coach Mo voice and Marco support. It receives spoken audio or support context, relevant fitness context, your first name, and your user ID.
 - **Stream** powers chat, communities, feeds, and moderation. It receives the identity and content needed to provide those features.
 
 These providers process information on our behalf to provide these features and do not use it to train their own models.
@@ -42,9 +42,9 @@ When personalization is enabled and the data is available, Coach Mo may also rec
 
 The app can replace supported placeholders with familiar names when it displays the response. Anthropic produces the response from the placeholder-redacted prompt.
 
-## Coach voice and Mo support
+## Coach voice and Marco support
 
-Coach voice and Mo support use ElevenLabs. To provide a personalized voice or support experience, ElevenLabs receives the relevant audio or support context together with your first name and MoveTogether user ID. Avoid sharing passwords, payment-card details, or other secrets in any AI conversation.
+Coach voice and Marco support use ElevenLabs. To provide a personalized voice or support experience, ElevenLabs receives the relevant audio or support context together with your first name and MoveTogether user ID. Avoid sharing passwords, payment-card details, or other secrets in any AI conversation.
 
 ## Content moderation
 
