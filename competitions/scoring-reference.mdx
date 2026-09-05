@@ -1,0 +1,49 @@
+---
+title: "Competition scoring reference"
+description: "Current MoveTogether competition scoring methods, exact daily formulas, caps, qualification rules, and worked examples."
+---
+
+The host chooses one scoring method when creating a competition. Scores are calculated server-side from synced activity. A daily score is then added across the competition window.
+
+## Activity-based methods
+
+| Method | Daily score | Limit or qualification |
+| --- | --- | --- |
+| Ring Close Count | One point for each Move, Exercise, and Steps goal reached | Maximum 3 points per day |
+| Percentage of Goals | Move-goal percentage + Exercise-goal percentage + Steps-goal percentage | Each ring is capped at 100%, for a maximum of 300 points per day |
+| Total Activity | active calories + exercise minutes + rounded(steps ÷ 100) | No method cap |
+| Step Count | steps | No method cap |
+| Calorie Burn | active calories | No method cap |
+| Exercise Minutes | exercise minutes | No method cap |
+| Workout Count | 1 if one qualifying workout is present; otherwise 0 | Maximum 1 point per day; a single workout must be longer than 15 minutes |
+| WHOOP Strain | the connected WHOOP daily strain | Requires a connected WHOOP |
+
+**Example: Percentage of Goals.** With 50% Move, 100% Exercise, and 75% Steps progress, the day scores `50 + 100 + 75 = 225` points. Going to 150% of a ring goal still contributes 100, not 150.
+
+**Example: Total Activity.** A day with 420 active calories, 35 exercise minutes, and 8,250 steps scores `420 + 35 + round(8,250 ÷ 100) = 538` points.
+
+## Goal-based methods
+
+### Personal Goal
+
+The host selects Steps, Calories, or Exercise Minutes and sets an allowed range. Each participant must choose a personal goal in that range. The daily score is that participant’s progress toward the goal as a percentage, capped at 100 and rounded to two decimal places. A participant who has not selected a goal scores zero until they do, and the personal goal is locked once set.
+
+**Example:** With a 10,000-step Personal Goal, 7,500 steps scores 75 points; 10,000 or 12,000 steps scores 100 points.
+
+Personal Goal and Stick To It are Pro-to-host formats. People can join them on any plan.
+
+### Stick To It
+
+The host sets one daily Steps, Calories, or Exercise Minutes target for everyone. Reaching the target scores 1 point for that day; missing it scores 0. Meeting the number exactly counts.
+
+**Example:** In a 7-day Stick To It competition with an 8,000-step daily target, reaching at least 8,000 steps on five days produces 5 points.
+
+## Head to Head
+
+In the create flow, **Head to Head** is the shortcut for choosing one raw metric: steps, active calories, or exercise minutes. It uses the corresponding Step Count, Calorie Burn, or Exercise Minutes formula above. Highest total wins.
+
+## Goals, caps, and fairness
+
+Your everyday Move, Exercise, and Steps goals affect Ring Close Count and Percentage of Goals. They do not alter raw-metric methods. Personal Goal uses the goal you lock for that competition, while Stick To It uses the host’s shared daily target.
+
+For a goal-based setup walkthrough, read [personal and shared goals](/competitions/personal-and-shared-goals). For a score that changes after a group vote, read [changing competition scoring](/competitions/changing-scoring).

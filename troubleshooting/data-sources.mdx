@@ -1,21 +1,42 @@
 ---
 title: "Manage and troubleshoot data sources"
-description: "Check connection status, permissions, pauses, and missing data for Apple Health, Health Connect, and wearable services."
+description: "Distinguish connection problems, missing permissions, unsupported metrics, and primary-source selection before reconnecting."
 ---
 
-Use **Settings → Data Sources** to see Apple Health, Health Connect, and connected wearable services, their status, and the sources contributing to your health metrics.
+Start in **Settings → Data Sources**. Check both the connection and the metric you expected: a provider can be connected successfully without supplying every kind of data.
 
-## Fix a connection
+## Read the situation before changing anything
 
-1. Pull to refresh **Data Sources** and check whether the service is connected, paused, or needs access review.
-2. For Apple Health, review MoveTogether's access in **iPhone Settings → Health → Data Access & Devices → MoveTogether**. Return to **Data Sources** to review access or manually backfill when offered.
-3. For a paused wearable service, use its reconnect option and complete the provider sign-in flow.
-4. If a service offers **Disconnect**, use it before replacing that connection. Some provider connections must be managed in the provider's own app.
+| What you see | What to do |
+| --- | --- |
+| Provider is paused or requests sign-in | Use **Reconnect** and complete the provider's authorization flow. |
+| Apple Health needs access | Use **Review Access**, then review MoveTogether's categories in Health settings. |
+| Connection is active, but one metric is empty | Check whether that metric exists in the source app and whether access to it was granted. |
+| Two devices show different totals | Check **Primary source** and compare the same date and metric. |
+| No recent activity in the provider app | Sync the device there first. MoveTogether cannot import readings the provider has not received. |
+| A source says **Coming soon** | It is not currently connectable. This applies to Suunto. |
 
-Sync timing depends on the source. Do not rely on two sources being automatically deduplicated. Suunto is shown as coming soon and is not connectable.
+Pull to refresh after completing a check. Repeatedly disconnecting a healthy connection is unlikely to help an unsupported metric.
 
-## Health Connect on Android public beta
+## Inspect contributors on iPhone
 
-In **Settings → Data Sources**, check Health Connect's connection status. Review MoveTogether's Health Connect permissions in Android settings, then reopen MoveTogether and return to **Data Sources**. If Health Connect is paused, use its reconnect option, and check that recent activity is present in Health Connect before checking MoveTogether again.
+Open a health metric in Data Sources to see its contributors. The Apple Health contributor list shows sources that have written recently. Use **Open Health** to manage access through **Browse → the metric → Data Sources & Access**.
 
-For deeper help with late or missing syncs, see [Fitness data not syncing](/troubleshooting/sync-issues).
+These contributors are separate from the [primary activity source](/getting-started/primary-activity-source). The primary preference selects a daily provider record; it does not give you permission to read a blocked Health category.
+
+If Apple Health offers a historical backfill action, let it complete before checking old dates. A refresh is not a guarantee that every provider will supply its entire history.
+
+## Check Health Connect on Android
+
+1. Confirm the expected reading is present in Health Connect.
+2. Review MoveTogether's permitted data types in Android's Health Connect settings.
+3. Check background/history permissions separately if the issue concerns background updates or older data.
+4. Reopen MoveTogether and refresh Data Sources.
+
+Revoking one data type stops future reads of that type. It does not remove existing stored copies. See [Android permissions](/getting-started/android-public-beta) and [data controls](/account/data-and-privacy).
+
+## Reconnect only the connection that needs it
+
+For a paused provider, use **Reconnect**. If a connection offers **Disconnect**, read its confirmation before removing it. A provider-managed connection may need to be disconnected in that provider's app instead.
+
+After reconnecting, check that you selected the same provider account as before. If it is still empty, use [fitness data not syncing](/troubleshooting/sync-issues) to separate a scoring or metric issue from a connection problem.

@@ -1,54 +1,40 @@
 ---
 title: "How competitions work"
-description: "How MoveTogether competitions work, including all seven scoring methods, team mode, durations, repeating cycles, and the upcoming-active-completed lifecycle."
+description: "How to join or host a MoveTogether competition, choose a scoring method, understand its lifecycle, and run repeating cycles."
 ---
 
-## Scoring methods
+Competitions turn synced activity into a shared leaderboard or a shared goal. Open **Compete** to join with an invite, code, or in-app invitation; use **+** to host one.
 
-**Ring Close Count.** Points for closing each activity ring. You earn points every time you close your Move, Exercise, or Steps ring. Rewards consistent daily activity, good for keeping everyone accountable.
+## Join versus host
 
-**Percentage of Goals.** Points based on goal completion percentage. Instead of raw numbers, this looks at what percentage of your personal goals you've hit. Levels the playing field since everyone's goals are different. A beginner working toward 5,000 steps gets rewarded just as much as an athlete aiming for 15,000.
+You can join competitions on every plan. The Free limit applies to **hosting**: Free accounts can host up to two eligible competitions at a time, while Pro can host unlimited. An active, upcoming, or draft competition you host uses a slot. Seasonal and evergreen competitions do not use that limit, and an eligible bonus slot can let a Free host create another one.
 
-**Total Activity.** Points for every calorie, minute, and step, combined into one score. The straightforward approach. The more you move, the more points you get.
+Completing or deleting an eligible hosted competition releases its slot. If joining fails, check the invite, participant eligibility, and whether the competition has ended; upgrading is not required merely to join.
 
-**Step Count.** Points for every step taken. The classic competition. Simple, easy to understand, and every tracker measures it.
+## Choose a format
 
-**Calorie Burn.** Points for every active calorie you burn. A pure output race for groups who want to see who put in the most work, whatever form the workout takes.
+Use **Individual** for a normal ranking, or enable **Team** and choose two to four teams. Team standings combine the members’ scores. Some formats also offer a shared group goal; that is progress the group works toward, not a replacement for the selected scoring rule.
 
-**Exercise Minutes.** Points for every minute of exercise. Rewards time spent moving, whether that comes from a walk, a lift, or a spin class.
+The host chooses a start and end date. The wizard offers weekend, weekly, monthly, and custom windows. Before the competition starts, the host can edit its settings. During an active competition, changing scoring needs the group’s agreement; see [changing competition scoring](/competitions/changing-scoring).
 
-**Workout Count.** A point for each dedicated workout you complete. Focuses on intentional exercise sessions rather than all-day activity, so showing up to train is what scores.
+## Lifecycle and scores
 
-## Team mode
+- **Upcoming:** people can join and the competition has not begun.
+- **Active:** synced activity is scored and the leaderboard updates as data arrives.
+- **Completed:** the cycle’s standings are finalized and retained in history.
 
-Competitions can be **Individual** (the default, everyone solo) or **Team**. For a team competition, you pick 2, 3, or 4 teams. Each team's combined score determines the ranking, which encourages collaboration. Participants pick a team when they join.
+Activity is calculated on the server. A sync delay can make a score appear late, and a refresh cannot create activity that has not reached MoveTogether yet.
 
-## Competition duration
-
-You pick how long your competition runs. MoveTogether has preset durations (**Weekend** for Saturday–Sunday, **Weekly** for Monday–Sunday, **Monthly**) or you can set a **Custom** date range. You can also turn on repeating competitions so they recur automatically.
-
-## Competition lifecycle
-
-Every competition goes through three stages:
-
-- **Upcoming.** The competition exists and friends can join, but hasn't started. The creator can still edit settings.
-- **Active.** The start date has arrived. Activity is being tracked, leaderboards are live, scores update in real time.
-- **Completed.** The end date has passed. Final rankings are locked in, winners are announced, achievements are awarded.
+When someone joins an active competition, MoveTogether schedules a backfill of already-elapsed dates in the competition window. It skips dates before that person’s signup and dates with no activity record. A Free member who joins a seasonal event does not receive pre-join seasonal days; the scoring window starts at their join date. The backfill runs after the join response, so the person can appear in the competition before older eligible days finish processing.
 
 ## Repeating competitions
 
-Turn on **Repeat** and the competition automatically creates a new cycle when the current one ends. Good for ongoing weekly challenges with the same group. Each cycle is tracked separately so you can see your performance over time.
+When a host selects **Repeat**, MoveTogether creates sequential cycles with the same competition setup. Each cycle has its own dates and final standings. There can be a gap between cycles for formats whose next window does not begin immediately; the next cycle then appears as upcoming until its start date.
 
-## Joining a competition
+Use a repeating competition for a standing weekly or monthly group, not when you need one uninterrupted all-time total. Review each cycle’s result in the competition details or your competition history.
 
-Three ways: tap an **Invite Link** from a friend, enter a **Competition Code** in the Compete tab, or accept an **In-App Invitation**. You can join a competition after it has started, but only data from when you join onward counts toward your score.
+## Next steps
 
-## Leaving or deleting a competition
-
-To leave, open the competition from the Compete tab, tap the more options menu (three dots), and select **Leave Competition**. Leaving removes you from the leaderboard and can't be undone.
-
-Only the creator can delete a competition. Deleting removes it for everyone.
-
-## Fair play across trackers
-
-One of MoveTogether's promises is that everyone competes on a level playing field, regardless of tracker. The app normalizes data across all supported devices so that differences in how trackers calculate metrics don't unfairly favor anyone. All scores are calculated server-side to make sure they're accurate and to prevent manipulation.
+- Read the formulas and caps in the [scoring reference](/competitions/scoring-reference).
+- Learn when goals affect a score in [personal and shared goals](/competitions/personal-and-shared-goals).
+- Follow a first setup in [your first competition](/getting-started/first-competition).

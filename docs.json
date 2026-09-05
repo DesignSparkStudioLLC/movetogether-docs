@@ -55,15 +55,20 @@
               "getting-started/android-public-beta",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
+              "getting-started/primary-activity-source",
               "getting-started/setting-goals",
               "getting-started/finding-friends",
-              "getting-started/first-competition"
+              "getting-started/first-competition",
+              "getting-started/build-with-mo"
             ]
           },
           {
             "group": "Competitions",
             "pages": [
               "competitions/how-it-works",
+              "competitions/scoring-reference",
+              "competitions/personal-and-shared-goals",
+              "competitions/changing-scoring",
               "competitions/leaderboard",
               "competitions/leagues",
               "competitions/achievements",
@@ -76,8 +81,10 @@
               "engagement/streaks-shields",
               "engagement/daily-challenges",
               "engagement/weekly-challenges",
+              "engagement/monthly-challenges",
               "engagement/morning-brief",
               "engagement/activity-analytics",
+              "engagement/export-activity-report",
               "engagement/weekly-report",
               "engagement/sharing-your-wins",
               "engagement/seasonal-events"
@@ -89,6 +96,7 @@
               "social-coach/friends-feed",
               "social-coach/what-makes-mo-different",
               "social-coach/coach-mo",
+              "social-coach/voice",
               "social-coach/coach-mo-capabilities",
               "social-coach/coach-mo-settings",
               "social-coach/coach-plans-rest-days",

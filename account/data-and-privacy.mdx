@@ -12,39 +12,23 @@ MoveTogether uses your account, activity, fitness, and social information to pro
 - **Competition and social information:** scores, rankings, participation history, friendships, posts, and messages needed for the features you use.
 - **Product diagnostics:** app events, masked session replays, crash details, and performance information when you opt in to product analytics.
 
-## Connected data
+## Sources, sharing, and providers
 
-**Usage data.** If you opt in to app analytics, MoveTogether processes usage events, masked session replay, and diagnostics associated with your persistent account UUID. You can control this in **Settings → Privacy Settings**.
+| Area | How it is used or shared |
+| --- | --- |
+| Connected health data | Apple Health, Health Connect, and connected trackers provide the data you authorize. MoveTogether stores the copies needed for scores, leaderboards, activity history, badges, and coaching; it does not write changes back to the original source. |
+| Competitions and social features | Competition participants can see the leaderboard information and competition details you share. Friends can see activity you share in social features. |
+| Product analytics | When you opt in, PostHog can receive your persistent account UUID, usage events, masked session replay, and crash or performance diagnostics. |
+| Social infrastructure | Stream receives the identity and content needed for chat, communities, feeds, and moderation. |
+| Coaching and support | Anthropic receives Coach Mo text context with direct names replaced by placeholders and without your MoveTogether user ID. ElevenLabs processes Coach Mo voice. Signed-in Marco support can use Intercom with authenticated account context. See [AI and your data](/account/ai-and-your-data) for the feature-by-feature explanation. |
 
-Data from Apple Health and Health Connect is read with your permission. Connected services can provide activity and health metrics through OpenWearables. You can review connections in **Settings → Data Sources** and revoke on-device health permissions from your phone's settings.
-
-MoveTogether stores the data needed to calculate server-side competition scores, build leaderboards, show activity history, and provide other features. Apple Health, Health Connect, or your wearable provider remains the original source of synced fitness data; MoveTogether does not write changes back to that source.
-
-## Who can see information
-
-People in a competition can see leaderboard information and the competition details you share. Friends can see activity you share in social features. The exact profile, activity, health-metric, invitation, and discoverability choices are controlled in **Settings → Privacy Settings**.
-
-MoveTogether stores your fitness data on our servers to power the app's core features: leaderboards, competitions, activity feeds, badges, and more. On iPhone, data can be read from Apple Health. During the Android public beta, data can be read from Health Connect. Other supported trackers sync through OAuth connections using our integration partner, OpenWearables.
-
-Competition scores are calculated server-side for security and fairness. Your health data stays in Apple Health, Health Connect, or your tracker's platform as the original source of truth. MoveTogether reads it. We never modify it.
-
-## Service providers
-
-MoveTogether uses providers such as Supabase for backend services and OpenWearables for connected wearables. Stream receives user ID, name, avatar, messages, posts, and submitted content for chat and moderation. If you opt in to product analytics, PostHog receives a persistent Supabase account UUID, usage events, masked replays, and crash or performance diagnostics.
-
-Competition participants can see your competition-related stats on the leaderboard, subject to your privacy settings. Friends can see your activity in the social feed, subject to your privacy settings. MoveTogether and its service providers process only the data needed to operate features such as scoring, badges, social features, analytics you opt into, and AI coaching. We never sell your personal or health data.
-
-For Coach Mo text coaching, insights, and reports, Anthropic receives relevant fitness context, messages, and report data; direct names are placeholders and Coach text prompts do not include your MoveTogether user ID. ElevenLabs receives spoken audio, relevant fitness context, first name, and user ID for Coach Mo voice and Marco support. The authoritative provider list is in our [Privacy Policy](https://movetogetherfitness.com/privacy).
-
-Different AI-powered features need different context. For Coach Mo text prompts sent to Anthropic, direct names are replaced with placeholders and your MoveTogether user ID is omitted. Coach voice and Marco support use ElevenLabs and can receive relevant audio or support context together with your first name and user ID.
-
-For a provider-by-provider breakdown, see [AI and your data](/account/ai-and-your-data).
+MoveTogether and its providers process the information needed to operate these features. We do not sell personal or health data.
 
 ## Your controls
 
 Open **Settings → Privacy Settings** to manage sharing, friend-request controls, product analytics, blocked users, data export, and account deletion. You can also request or manage advertising tracking permission there; iOS tracking permission can be changed in iPhone Settings.
 
-- **Export:** request a copy of the data associated with your account. The app emails a download link when the export is ready.
+- **Export:** request a copy of the data associated with your account. The app emails a download link when the export is ready. This account export is a JSON download; it is separate from an [activity report CSV](/engagement/export-activity-report).
 - **Delete:** request permanent deletion of your account and associated data. Review the confirmation carefully because this cannot be undone.
 - **Coach Mo:** delete individual conversations, all conversations, or Files from Coach Mo settings without deleting the rest of your account.
 
@@ -52,11 +36,13 @@ Your data is stored using industry-standard encryption. All connections between 
 
 ## Downloading your data
 
-You can request a copy of all the data MoveTogether has about you. Go to **Settings → Privacy Settings → Download My Data**, tap the button to request an export, and you'll get an email with a download link when it is ready. It usually takes a few minutes, and the link expires after 7 days.
+You can request a copy of all the data MoveTogether has about you. Go to **Settings → Privacy Settings → Download My Data**, tap the button to request an export, and you'll get an email with a download link when it is ready. The account export is JSON. It is different from the [activity report CSV](/engagement/export-activity-report), which is designed for selected activity dates and metrics. The account-export link usually takes a few minutes to arrive and expires after 7 days.
 
 ## Deleting your data
 
-To delete your account and all associated data, go to **Settings → Privacy Settings → Delete My Account**, confirm your identity if asked, and confirm. This is permanent and can't be undone. All of your data will be deleted.
+To delete your account and associated data, go to **Settings → Privacy Settings → Delete My Account**, confirm your identity if asked, and confirm. This is permanent and cannot be undone. MoveTogether deletes or de-identifies the account data within 30 days, except where retention is required by law or needed for fraud prevention, abuse prevention, or dispute resolution.
+
+Revoking a health permission or disconnecting a source stops future reads covered by that permission or connection. It does not erase copies already stored in your MoveTogether account. Delete the account to request deletion of stored account data.
 
 ## Third-party services
 
@@ -68,7 +54,8 @@ MoveTogether uses these third-party services to operate:
 | RevenueCat | Subscription management |
 | OneSignal | Push notifications |
 | Anthropic Claude | Powers Coach Mo text; direct names are replaced with placeholders and the MoveTogether user ID is omitted from prompts |
-| ElevenLabs | Powers Coach voice and Marco support using relevant audio or support context, first name, and user ID |
+| ElevenLabs | Powers Coach Mo voice using the audio and context needed for that feature |
+| Intercom | Powers signed-in Marco support using authenticated account context and support messages |
 | OpenWearables | Health data integration for third-party trackers |
 | Hive | Content moderation (text and image) |
 | Stream | Chat, communities, feeds, and moderation using the identity and content those features need |
