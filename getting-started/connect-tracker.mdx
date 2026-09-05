@@ -1,46 +1,55 @@
 ---
 title: "Connect a data source"
-description: "Connect Apple Health on iOS, Health Connect on Android public beta, or a supported wearable service, and review sync status in Data Sources."
+description: "Connect Apple Health, Android Health Connect, or a wearable service, verify the first sync, and manage multiple activity sources."
 ---
 
-MoveTogether can use Apple Health, Health Connect, or a connected wearable service for activity data. Available sources vary by platform. Go to **Settings → Data Sources**, then select the source you want to connect.
+MoveTogether reads activity from an on-device health service or a connected wearable provider. You do not need an Apple Watch to use a supported connected provider.
 
-## Available services
+## Choose the right connection
 
-- Apple Health
-- Health Connect
-- Google Health / Fitbit
-- Garmin
-- WHOOP
-- Strava
-- Polar
-- Oura
-- Ultrahuman
+| Source | Where it connects | What to check first |
+| --- | --- | --- |
+| Apple Health | iPhone permission sheet | Recent activity is visible in the Health app. Apple Watch activity reaches MoveTogether through this path. |
+| Health Connect | Android permission flow | Your tracker app has written the permitted data to Health Connect. |
+| Google Health / Fitbit, Garmin, WHOOP, Strava, Polar, Oura, Ultrahuman | Provider authorization | Sign in to the provider account that holds your activity. |
 
-Suunto appears in the picker as **Coming soon** and cannot be connected yet. Apple Watch data reaches MoveTogether through Apple Health; the native MoveTogether Apple Watch app is a separate companion experience.
+Suunto is shown as **Coming soon** and cannot be connected yet. The native [Apple Watch app](/account/apple-watch-app) is a companion experience; installing it and granting Apple Health access are separate steps.
 
-## Connect and manage
+Not every provider supplies every metric. A connected status does not guarantee steps, sleep stages, weight, or other data that your device does not record or share.
 
-1. In **Settings → Data Sources**, tap **Connect a service**.
-2. Select the service and complete its authorization flow.
-3. Return to **Data Sources** to check its status. A paused service can be reconnected; an active service can be disconnected when that option is available.
+## Connect a wearable service
 
-### Apple Health
+1. Sync your device with its own companion app.
+2. Open **MoveTogether → Settings → Data Sources**.
+3. Tap **Connect a service**, then select your provider.
+4. Complete the provider's sign-in and authorization screens.
+5. Return to **Data Sources** and check the connection status.
+6. Refresh your activity after the provider has finished its first sync.
 
-Apple Health uses the iOS permission sheet rather than a provider login. Allow the categories you want MoveTogether to read, including the activity metrics used by your competitions. To review the choice later, open **iPhone Settings → Health → Data Access & Devices → MoveTogether**.
+The provider handles its password screen; MoveTogether does not receive that password. If a provider displays an access requirement or upgrade screen, review it before continuing. Connection does not make unavailable source metrics appear.
 
-Your Apple Watch first syncs its data to Apple Health, then MoveTogether reads the authorized categories. If today's activity is missing, confirm the Watch has synced to the Health app before troubleshooting MoveTogether.
+## Apple Health on iPhone
 
-### Health Connect on Android public beta
+Select Apple Health in Data Sources and use **Connect** or **Review Access**, depending on its current state. Allow the categories you want MoveTogether to read.
 
-Select **Health Connect** from **Settings → Data Sources**, then complete Android's permission flow. Return to Data Sources to review the connection and the permissions available to your account and device.
+If you use an Apple Watch, check today's values in the iPhone Health app first. If the Watch has not synced to Health, refreshing MoveTogether cannot recover data that has not arrived there yet.
 
-### Wearable services
+Review permissions later in the Health app's access settings for MoveTogether. Permission labels and the path through iPhone Settings can vary by iOS version. For an individual metric, use **Health → Browse → the metric → Data Sources & Access** to inspect its contributors.
 
-Google Health / Fitbit, Garmin, WHOOP, Strava, Polar, Oura, and Ultrahuman use the provider's authorization flow. MoveTogether does not receive or store the password you enter on the provider's sign-in page. The first sync can take time after you return to the app.
+## Health Connect on Android
 
-Open the provider's companion app and let the device finish syncing there before checking MoveTogether. If a connection is paused or expired, use the reconnect action in **Data Sources**.
+Open **Settings → Data Sources → Health Connect** and complete Android's permission flow. Core activity uses authorized steps, active calories, and exercise sessions. Optional sleep, weight, and height access supports additional features. Background reading and history access are separate permissions.
 
-The screen also shows which sources contribute to health metrics. Do not assume that connecting more than one service will deduplicate the same activity; review your sources and use the connection that best fits your setup.
+MoveTogether reads from Health Connect; it does not write changes back. See [Android public beta](/getting-started/android-public-beta) for the permission and history scope.
 
-For help when data is late or missing, see [Troubleshoot data sources](/troubleshooting/data-sources).
+## More than one source
+
+You can add another service. On iPhone, **Primary source** appears when there are at least two eligible providers. Use it to choose a preference or leave **Automatic** selected. See [choose your primary source](/getting-started/primary-activity-source) before interpreting differences between device totals.
+
+## Reconnect or disconnect
+
+A paused service can offer **Reconnect**. Complete authorization again, then check for new activity. If you see **Disconnect**, it stops that connection's future syncing; some providers instead direct you to manage access in their own app.
+
+Disconnecting is not account-data deletion. Existing MoveTogether records remain subject to your [data and privacy controls](/account/data-and-privacy).
+
+If a Fitbit connection shows **Update connection**, follow that flow to move the connection to Google Health. For missing readings, start with [manage and troubleshoot data sources](/troubleshooting/data-sources).

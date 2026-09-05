@@ -3,7 +3,7 @@ title: "The MoveTogether Apple Watch app"
 description: "Everything the MoveTogether Apple Watch app does — voice with Coach Mo, today's activity, streak detail, events, friends leaderboard, and complications."
 ---
 
-The MoveTogether Apple Watch app gives you the most useful pieces of the iPhone app, right on your wrist. It installs automatically when you install the iPhone app.
+The MoveTogether Apple Watch app gives you useful pieces of the iPhone app on your wrist. Install it from the Watch app on your paired iPhone if it is not already available.
 
 ## Signing in
 
@@ -17,7 +17,7 @@ The main view shows today at a glance:
 - **Live event banner** (only when there's an active seasonal event)
 - **Hero ring** — your Move ring, large and front-and-center
 - **Three small ring tiles** — Move, Exercise, Steps with current progress
-- **Streak card** — current streak count + tap target for the detail view
+- **Streak card** — current weekly streak count and a link to its detail view
 - **Today's challenges** — your daily challenges with progress
 - **Friends preview** — quick glance at where you stand vs friends today
 - **Competitions summary** — your active competitions and standings
@@ -48,10 +48,10 @@ For more on how Mo works, see [Coach Mo](/social-coach/coach-mo) and [What makes
 
 Tap the streak card on Home for the full breakdown:
 
-- **Hero number** — your current streak in days with a glowing flame icon
-- **Last 30 days** — a 6×5 grid showing which days qualified, which didn't, and which used a shield. Today is outlined.
-- **Next milestones** — up to 3 upcoming milestones with progress bars
-- **Recent badges** — your most recently earned badges (up to 6)
+- **Hero number** — your current streak in qualifying weeks and the weeks to its next milestone
+- **Last 30 days** — a grid showing days that qualified for streak progress; today is outlined
+
+The day grid and the weekly streak are different measures. A qualifying day can contribute to the current week, while the streak count shown here is in weeks. Badge progress has its own rules and is not the same as the day grid or weekly streak count.
 
 ## Events
 
@@ -65,7 +65,7 @@ The top 3 are shown as a podium with gold, silver, and bronze accents. Ranks 4 a
 
 MoveTogether ships an Apple Watch complication that puts your Move ring progress on your watch face.
 
-**What it shows:** a circular gauge with your current Move ring as a percentage. Updates every 15 minutes in the background.
+**What it shows:** a gauge with your current Move-ring progress. The complication requests a refresh about every 15 minutes; watchOS schedules the actual updates.
 
 **Adding it:**
 
@@ -85,7 +85,7 @@ Designed for the **accessoryCircular** slot on modern Watch faces (Modular, Info
 
 ## Background behavior
 
-The Watch app refreshes data periodically when your wrist is up and your Apple Watch has connectivity (Wi-Fi or cellular). Coach Mo voice needs a live connection — it doesn't work in airplane mode or with both Bluetooth + Wi-Fi off.
+The Watch app can refresh when the watch has a connection, but watchOS controls background scheduling. Open the Watch app when you need the latest data. Coach Mo voice needs a live connection.
 
 <Note>
   If the complication shows "—" or data feels stale, open the MoveTogether Watch app once to trigger a refresh, or check Apple Health permissions in **iPhone Settings → Health → Data Access & Devices → MoveTogether**.

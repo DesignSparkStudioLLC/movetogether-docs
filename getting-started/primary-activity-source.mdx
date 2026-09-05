@@ -1,0 +1,43 @@
+---
+title: "Choose your primary activity source"
+description: "Choose Automatic or a preferred activity provider, understand fallback behavior, and distinguish daily totals from Apple Health contributors."
+---
+
+If you connect more than one activity provider, you can choose which one MoveTogether should prefer for your daily activity totals. This helps when you wear different devices or your phone and tracker record different numbers.
+
+The steps below describe the iPhone **Data Sources** screen. The **Primary source** control appears when there are at least two eligible sources to choose between. A missing picker does not mean your only connected source is broken.
+
+## Choose a source
+
+1. Open **Settings → Data Sources**.
+2. Tap **Primary source**.
+3. Select your preferred provider, or choose **Automatic**.
+4. Wait for the selection to save. If the app shows a save error, try again before assuming the new choice is active.
+5. Refresh your activity after your tracker has synced.
+
+Your preference guides source selection when MoveTogether processes provider activity. It is not a promise that every historical total changes immediately.
+
+## What the choices mean
+
+| Choice | How daily provider activity is selected |
+| --- | --- |
+| Automatic | Use the activity provider selected by the integration's default ordering. |
+| A named primary source | Prefer that provider's daily activity when it has data indicating the device was used. |
+| Primary missing or apparently unused | Another source with recorded activity can be used for that day. |
+| All sources quiet | Keep the primary's available record, rather than treating a quiet day as a sync failure. |
+
+For this daily-provider selection, MoveTogether chooses one source's record as a whole. It does not add the steps from every provider together or combine one provider's steps with another provider's calories. Workout processing and other health metrics have their own rules.
+
+**Example:** you normally wear a Garmin, but leave it at home and record a walk with another connected device. The preference can fall back for that day. Selecting Garmin is a preference, not a rule to discard all activity when Garmin has no usable record.
+
+## Primary source versus Apple Health contributors
+
+Apple Health can contain readings from several apps and devices. In **Data Sources**, open a health metric to review its contributors. The contributor view lists recent writers; it is not the same control as your primary activity provider.
+
+To allow or block an Apple Health contributor, use the Health app's **Browse → the metric → Data Sources & Access** controls. Changing a primary activity provider does not change those Apple Health permissions.
+
+## If totals still look wrong
+
+First compare the same date and metric. Active calories are different from total calories; Exercise minutes are different from total workout duration. Confirm your preferred provider has finished syncing, then check its connection in Data Sources.
+
+If the wrong source appears to be used, tell [Marco support](/troubleshooting/contact-support) which source you selected, the date, and the metric affected. See [fitness data not syncing](/troubleshooting/sync-issues) for checks before reconnecting.

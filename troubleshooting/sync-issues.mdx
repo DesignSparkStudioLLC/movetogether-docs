@@ -1,74 +1,53 @@
 ---
 title: "Fitness data not syncing"
-description: "How to fix MoveTogether sync issues with Apple Health, Apple Watch, Health Connect, and connected fitness providers, including why detected walks may not count toward Exercise."
+description: "Check missing activity in order, understand Exercise credit from workouts, and distinguish delayed sync from scoring rules."
 ---
+
+Check the source before reconnecting. The useful question is where the expected reading stops appearing: on your tracker, in its companion app, in the phone's health service, or in MoveTogether.
 
 ## Quick fix checklist
 
-1. Pull down to refresh on a screen showing your fitness data.
-2. Force-close and reopen MoveTogether.
-3. Open your tracker's companion app and make sure it has synced recently.
-4. Check your internet connection.
-5. Confirm that MoveTogether is on the current version for your platform.
-6. Restart your phone.
+1. Open your tracker's companion app and let the device sync.
+2. Check that the expected reading is present for the affected date.
+3. Open **MoveTogether → Settings → Data Sources** and check connection status.
+4. Review any missing permissions or reconnect a paused provider.
+5. Return to the activity screen and pull to refresh.
+6. If the screen still seems stuck, check connectivity, update MoveTogether, and reopen the app.
 
 ## iOS: Apple Health and Apple Watch
 
-Review Apple Health permissions for MoveTogether, then check that the Health app has recent activity data. If you use an Apple Watch, let it sync with Apple Health before reopening MoveTogether.
+Check the iPhone Health app before MoveTogether. If Apple Watch data is missing there too, allow the Watch to sync first. If it is present in Health, review MoveTogether's access to the specific category.
 
-For help reviewing permissions, see [Connecting your fitness tracker](/getting-started/connect-tracker).
+An empty Apple Exercise value is not proof that a third-party tracker recorded no workout. Some devices provide workout sessions without an Apple Watch-style activity summary. MoveTogether can derive Exercise credit from eligible third-party workouts; the rules below explain why that credit can differ from the provider's total session time.
 
-For Google Health / Fitbit, Garmin, WHOOP, Oura, Strava, Polar, and Ultrahuman:
+## Connected providers
 
-1. Open your tracker's companion app and trigger a manual sync.
-2. Check your connection in MoveTogether: go to **Settings → Data Sources** and make sure your tracker shows as connected.
-3. If it is paused, use its reconnect option and sign in again. If it offers **Disconnect**, reconnect after disconnecting. This refreshes authorization.
+Google Health / Fitbit, Garmin, WHOOP, Oura, Strava, Polar, and Ultrahuman use their provider connection. Check the companion app and then Data Sources. For multiple devices, review your [primary source](/getting-started/primary-activity-source): the selected daily record may differ from the device you are comparing against.
 
-## Android public beta: Health Connect and providers
+For a WHOOP setup, verify both that workouts have arrived and that you are comparing active activity rather than the provider's total daily energy expenditure. Do not grant unrelated Apple Health access just to repair a provider connection.
 
-Open **Settings → Data Sources** in MoveTogether to review Health Connect or connected-provider status. If Health Connect is connected, review its permissions; if a provider needs attention, reconnect it through Data Sources after confirming that its companion app has synced.
+## Android: Health Connect
 
-Android beta updates are delivered through Google Play. Open the [MoveTogether Google Play listing](https://play.google.com/store/apps/details?id=studio.designspark.movetogether) to check for an update.
+Confirm the readings are present in Health Connect, then review MoveTogether's data-type permissions. Background and historical reads have their own permissions. See [Android public beta](/getting-started/android-public-beta) for the supported scope.
 
-## My workouts sync, but my Exercise ring stays empty
+## My workouts sync, but my Exercise ring looks different
 
-This one isn't a sync problem. Your workouts are arriving, they're just not
-all counting toward Exercise.
+Workout duration, credited Exercise minutes, and a competition's Workout Count score are different measurements.
 
-Exercise minutes feed competition scoring, so they're reserved for deliberate
-training:
+For third-party workouts imported through Apple Health, MoveTogether derives Exercise credit from eligible sessions. Walking and sessions categorized as **Other** need at least **10 minutes**. This crediting path does not require a distance reading or a minimum walking pace.
 
-- **Any workout you record counts.** A run, a ride, a strength session, a
-  class. If you started it, it counts.
-- **Walks count too**, as long as they run at least 15 minutes at a genuine
-  walking pace.
-- **Movement your tracker detects on its own doesn't count.** Rings and
-  watches log short bursts of walking through the day without you starting
-  anything. Moving around the house or a few steps between errands isn't
-  training, and counting it would let someone out-score a person who actually
-  worked out.
+Walking/Other sessions share an allowance of up to **60 additional minutes per day** in this path. Overlapping sessions are not simply added together: a walk recorded during another workout does not give you a second copy of those minutes. Other eligible workout types contribute their non-overlapping duration.
 
-<Note>
-  That movement isn't thrown away. It still counts toward your **Steps** ring
-  and any step-based competition. Only the Exercise ring is affected.
-</Note>
+**Example:** two non-overlapping eligible walking sessions of 40 minutes each do not produce 80 additional Exercise minutes in this path; the daily walking/Other contribution is capped at 60. A qualifying 12-minute walk can contribute Exercise minutes even though it does not meet the separate Workout Count scoring rule.
 
-If a workout you definitely did is missing, start the activity in your
-tracker's own app before you set off, rather than letting it detect the
-session afterwards. Your tracker then records your pace and distance, and
-those minutes land on your Exercise ring.
+These are rules for this workout-crediting path, not a promise that every provider reports or processes Exercise identically. Apple activity summaries and direct provider readings can differ. For a **Workout Count competition**, a day scores at most one point and needs a single workout **longer than 15 minutes**. See the [scoring reference](/competitions/scoring-reference).
 
-Forgot to start it? Most tracker apps let you add or edit an activity after
-the fact. That correction syncs to MoveTogether the normal way and counts.
+## Rings updated, but a score or challenge has not
+
+Refresh the competition or challenge after activity syncs. Then check its rule and date window. A daily cap, goal threshold, different scoring method, or a completed competition can explain why additional activity does not add the points you expected.
+
+Use [competition troubleshooting](/troubleshooting/competition-issues) for scores and [daily challenges](/engagement/daily-challenges) for challenge progress.
 
 ## If data still does not appear
 
-Try again after the source provider has completed its own sync. If the problem continues, contact support and include:
-
-- Your MoveTogether username
-- The data source or tracker you use
-- Your phone model and OS version
-- When the issue started
-- Any error messages you saw
-
-Use the in-app support flow or [MoveTogether support](https://movetogetherfitness.com/contact) for account-specific help.
+Contact [Marco support](/troubleshooting/contact-support) with the date, metric, source, phone model, app version, and any error message. Say whether the reading appears in the provider app or Health service and which primary source you selected. Share account or health details only through the private support flow.

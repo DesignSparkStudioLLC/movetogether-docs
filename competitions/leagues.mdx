@@ -1,21 +1,17 @@
 ---
 title: "Move Leagues"
-description: "How MoveTogether's weekly leagues work — the 10-tier ladder from Walker to Legend, the Monday reset, scoring, promotion and demotion zones, and demotion protection."
+description: "How MoveTogether's free weekly leagues work: tiers, scoring, Monday resets, promotion and demotion zones, ties, and protection."
 ---
 
-## What Move Leagues are
+Move Leagues are free weekly cohorts. Open **Compete**, then the leaderboard launcher and **League**, to see your tier, cohort, current zone, and countdown.
 
-Every Monday, you're placed in a fresh cohort of up to 30 movers in the same tier as you. You compete for a week. Top finishers **promote** to a tougher league, bottom finishers **demote** a tier, and everyone in the middle holds their tier. There are ten tiers in total, from **Walker** up to **Legend**.
+## The ladder
 
-Leagues are free for everyone — no paywall, no opt-in. Open the app and log activity, and you're in.
+You begin at Walker. A full cohort contains up to 30 people at the same tier. Top finishers promote, people in the middle hold their tier, and the demotion zone moves down one tier. The displayed zones are live estimates; actual thresholds scale for a smaller cohort.
 
-## The 10 tiers
-
-You start at **Walker** when you sign up and climb naturally as you compete. Tier badges are cosmetic — they signal where you stand but don't unlock or restrict any features.
-
-| # | Tier | Promote (top N) | Demote (bottom 5) |
+| # | Tier | Promotion at a full cohort | Demotion at a full cohort |
 | --- | --- | --- | --- |
-| 1 | Walker | Top 15 | — (can't drop below) |
+| 1 | Walker | Top 15 | — |
 | 2 | Jogger | Top 12 | Bottom 5 |
 | 3 | Runner | Top 10 | Bottom 5 |
 | 4 | Strider | Top 9 | Bottom 5 |
@@ -24,108 +20,40 @@ You start at **Walker** when you sign up and climb naturally as you compete. Tie
 | 7 | Champion | Top 6 | Bottom 5 |
 | 8 | Elite | Top 5 | Bottom 5 |
 | 9 | Master | Top 3 | Bottom 5 |
-| 10 | Legend | — (top of the ladder) | Bottom 5 |
+| 10 | Legend | — | Bottom 5 |
 
-The promote counts above are the **maximums**, reached when a cohort is full (around 30 movers). Promotion is always capped at **half the cohort**, so smaller groups promote proportionally fewer — a 10-person Jogger cohort promotes its top 5, not 12. Demotion scales down the same way in small cohorts, and there's always at least one safe spot in the middle.
+Promotion is capped at half the cohort. For example, a 10-person Jogger cohort promotes its top five rather than twelve. Demotion also scales down in smaller cohorts, leaving at least one safe middle position. Walker is the floor; Legend is the top tier.
 
-Walker is friendly on purpose — up to half the cohort promotes, so new movers feel forward motion right away. The bar tightens as you climb. Legend is the top tier, so no one promotes out of it, but the bottom 5 still drop back to Master each week. Holding Legend takes real effort.
+## Weekly timing
 
-## How a week works
+Leagues reset at Monday 00:00 UTC. At that moment MoveTogether finalizes the preceding week, records your result, assigns a new cohort at your resulting tier, and starts the new week at zero. Depending on your time zone, that can be Sunday evening or Monday morning locally.
 
-### Monday 00:00 UTC — reset moment
+If a cohort has too few active movers for a meaningful race, the app can hold everyone in their current tier for that week. The League card explains when no promotion or demotion will occur.
 
-A single global reset for everyone. There's a live countdown on the League tab. At that instant:
+## Scoring
 
-1. **Last week's cohorts are scored.** The top N promote, the bottom 5 demote, and your result is saved to your league history.
-2. **You're placed in a fresh cohort.** Up to 29 other people in your current tier. You can't pick your cohort or your tier-mates — placement is automatic.
-3. **Your score resets to zero** and the new week begins.
-
-The reset is the same instant worldwide. If you're in Tokyo, your week starts Monday morning. If you're in Los Angeles, it starts Sunday evening.
-
-### During the week
-
-Your rank inside the cohort updates **live** as you log activity. Pull to refresh, or just reopen the screen. Each row in the cohort list is tinted by where that person would land if the week ended right now: green for promotion, red for demotion, untinted for safe.
-
-### Quiet weeks
-
-Leagues only shuffle tiers when there's a real race. If a cohort has too few movers in it that week, no one promotes or demotes — everyone holds their tier until the group fills out. When that's the case, your League card says so instead of showing a promotion or demotion zone.
-
-## How scoring works
-
-Move Leagues uses a single, straightforward formula across the full week:
+League points for the week are:
 
 ```text
-points = move calories + exercise minutes + (step count ÷ 100)
+points = move calories + exercise minutes + (steps ÷ 100)
 ```
 
-That's it. Summed across all seven days.
+The same formula is used for the **weekly** Global leaderboard. The **Friends** leaderboard uses the formula for its **daily** ranking and resets at local midnight. Your daily ring goals do not change any of these leaderboard scores.
 
-The formula is **goal-independent**, so two movers with very different ring goals can compete fairly. It also rewards every kind of movement — calories for effort, minutes for sustained activity, and steps for all-day baseline movement. You can win a league with any mix.
+**Example:** 420 active calories, 35 exercise minutes, and 8,250 steps produces `420 + 35 + 82.5 = 537.5` league points before the displayed total is summed with other days.
 
-Ties are broken alphabetically by display name, the same rule used elsewhere in the app.
+## Zones and ties
 
-The Friends leaderboard (daily) and the Global leaderboard (top 100 weekly) use the same formula. Same points system, three different scopes.
-
-## The three zones
-
-Every row in your cohort sits in one of three zones, based on current rank:
-
-- 🟢 **Promotion zone** — top N of the cohort (up to half the group, varies by tier). You'll move up next Monday.
-- ⚪ **Safety zone** — middle of the cohort. You'll stay in your current tier.
-- 🔴 **Demotion zone** — bottom 5. You'll drop a tier next Monday, unless you have a demotion protection in the bank.
-
-**Example.** A Jogger cohort of 30:
-
-- Ranks 1–12 promote to Runner
-- Ranks 13–25 stay in Jogger
-- Ranks 26–30 demote to Walker (unless protected)
+The leaderboard marks a promotion zone, safety zone, and demotion zone. A league’s final order uses a stable system tie-break based on account identity, so changing a display name cannot affect promotion or demotion. This differs from monthly challenges, where people with the same completion count share a dense rank tier. See [monthly challenges](/engagement/monthly-challenges).
 
 ## Demotion protection
 
-Everyone gets **1 demotion protection** they can carry at a time. If you finish in the demotion zone but have a protection, it's used automatically and you stay in your current tier. You don't pick when to use it.
+You can hold one demotion protection. If you finish in the demotion zone while holding one, it applies automatically and you stay in your current tier. The app shows whether you have protection; it does not guarantee protection for every low-scoring week.
 
-The system grants additional protections over time as your engagement warrants — exact replenishment is tuned in the background. The protection is there so a single rough week (vacation, illness, anything) doesn't undo weeks of climbing. It softens the blow without removing the stakes — you can only bank one at a time, so you can't coast.
+## Reading the other leaderboard tabs
 
-## Push notifications you'll get
+- **League:** your current weekly cohort and tier.
+- **Friends:** a daily ranking of people you have added; it resets at local midnight.
+- **Global:** the top 100 movers worldwide for the current league week.
 
-Leagues send notifications when something on the leaderboard meaningfully changes for you. All are rate-limited so you don't get spammed.
-
-**Overtake** — "Someone just passed you in your league cohort." Sent at most once per overtake event with a short cooldown.
-
-**Near-miss alerts (three flavors)**
-
-- **So close** — you're 1–2 spots from the promotion zone.
-- **Slipping** — you're 1 spot from the demotion zone.
-- **In the demotion zone** — you've fallen into the bottom 5.
-
-**Weekly result** — a single notification on Monday summarizing whether you promoted, stayed, or demoted.
-
-## Where it lives in the app
-
-The Leaderboard screen has three tabs:
-
-1. **League** (default) — your current cohort, your tier badge, your rank, your zone, and a countdown to the next Monday reset.
-2. **Friends** — daily ranking among the friends you've added. Resets at local midnight.
-3. **Global** — the top 100 movers worldwide for the week.
-
-You reach the leaderboard from the **Compete** tab via the leaderboard launcher card at the top.
-
-## Frequently asked questions
-
-**Do I need to do anything to join a league?** No. Open the app, log activity, and you're in. Cohort assignment happens automatically the first time you open the Leaderboard tab.
-
-**Are leagues free?** Yes. Move Leagues are a core feature on every plan, including Free.
-
-**Can I be in a cohort with my friends?** Not by design. Cohorts are filled by tier and the order people join during the week. If two friends happen to be at the same tier at the same moment, they might end up together — but it isn't guaranteed. For direct friend competition, use the Friends leaderboard.
-
-**What if I take a week off?** You'll score zero and almost certainly land in the demotion zone. Your one demotion protection covers a single week. Two weeks off in a row, the second drops you a tier.
-
-**What counts as "activity" for the score?** Anything that produces move calories, exercise minutes, or steps in a connected data source — Apple Health on iOS, Health Connect during the Android public beta, or a current connected provider such as Google Health / Fitbit, Garmin, WHOOP, Oura, Strava, Polar, or Ultrahuman. Suunto is coming soon and is not currently connectable.
-
-**Can I lose Walker?** No. Walker is the floor. The bottom 5 of a Walker cohort stay in Walker.
-
-**What happens at Legend?** Legend is the top tier, so there's nowhere to promote to. Top finishers hold their Legend badge, and the bottom 5 still drop back to Master — so staying in Legend takes work week after week.
-
-**How is this different from the Friends leaderboard?** Friends is **daily**, resets at local midnight, and is scoped to people you've added. Move Leagues is **weekly**, resets Monday 00:00 UTC globally, and is scoped to 29 strangers at your tier. Same scoring formula in both.
-
-**How is this different from the Global leaderboard?** Global shows the top 100 movers worldwide for the week. Leagues shows your 30-person cohort — a local, winnable comparison. Same scoring formula and same week boundaries.
+For a direct challenge with friends using a different scoring method, create or join a competition. For missing data or a delayed position change, see [competition troubleshooting](/troubleshooting/competition-issues).

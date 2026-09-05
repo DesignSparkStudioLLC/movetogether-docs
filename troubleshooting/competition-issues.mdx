@@ -1,27 +1,27 @@
 ---
 title: "Competition issues"
-description: "Troubleshooting MoveTogether competition issues — scores not updating, hitting the free 2-competition limit, can't join or create, and wrong-looking scores."
+description: "Troubleshoot competition joins, hosting limits, delayed scores, unexpected standings, and scoring-change proposals."
 ---
 
-## My score isn't updating
+## My score is not updating
 
-- Check your connection in **Settings → Data Sources**.
-- Pull down to refresh on the competition leaderboard.
-- Give the connected provider time to finish its own sync, then refresh again.
-- Make sure the competition is still active. Scores freeze after the end date.
+1. Confirm the data source is connected in **Settings → Data Sources**.
+2. Let the provider complete its own sync.
+3. Open the competition leaderboard and pull down to refresh.
+4. Confirm that the competition is active and that the metric is eligible for its scoring method.
 
-## I can't join a competition
+Scores are calculated on the server from synced activity. A refresh cannot add data the provider has not yet sent. See [the scoring reference](/competitions/scoring-reference) for method-specific caps and qualification rules.
 
-- The competition may have already ended. You can only join active or upcoming competitions.
-- You may be at your competition limit. **Free users can only have 2 active competitions.** Upgrade to Pro for unlimited.
-- The invite link or code may be invalid. Ask the creator for a new one.
-- The competition may be restricted to specific invited users.
+## I cannot join
 
-## I can't create a competition
+Check that the competition has not ended, the invite or code is current, and any invitation restriction includes you. Free members can join competitions without a two-competition participation cap. If it is an active competition, its displayed dates and rules determine whether activity can be counted.
 
-- Check your competition limit. **Free users can only have 2 active competitions.**
-- Make sure you have an active connection in **Settings → Data Sources**.
+## I cannot host
 
-## A participant's score seems wrong
+Free accounts can host up to two eligible active, upcoming, or draft competitions. Complete or delete an eligible hosted competition to release a slot, or use an available eligible bonus slot. Seasonal and evergreen competitions are excluded. Also check the Fair Play notice and your connection in **Settings → Data Sources**.
 
-All scores are calculated server-side for accuracy. The participant may be using a different tracker that syncs at a different frequency. There may be a temporary sync delay. If the issue continues, use the in-app support flow or [MoveTogether support](https://movetogetherfitness.com/contact).
+## A score or position changed unexpectedly
+
+First, wait for all affected sources to sync and refresh. If the host proposed a scoring change, every participant must accept before it applies; then prior days are rescored and positions can move. One decline leaves the existing scoring in place. Read [changing competition scoring](/competitions/changing-scoring) for the full process.
+
+If the result still appears incorrect after the source has synced, use the in-app support flow and include the competition name, date, scoring method, and the activity value you expected.
