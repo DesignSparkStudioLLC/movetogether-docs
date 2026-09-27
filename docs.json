@@ -33,7 +33,12 @@
   "redirects": [
     {
       "source": "/getting-started/android-coming-soon",
-      "destination": "/getting-started/android-public-beta",
+      "destination": "/getting-started/android",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/android-public-beta",
+      "destination": "/getting-started/android",
       "permanent": true
     }
   ],
@@ -49,7 +54,7 @@
               "getting-started/welcome",
               "getting-started/create-account",
               "getting-started/language-and-region",
-              "getting-started/android-public-beta",
+              "getting-started/android",
               "getting-started/first-run-onboarding",
               "getting-started/connect-tracker",
               "apple-health/connect-your-tracker",
