@@ -1,6 +1,6 @@
 ---
 title: "Connect your tracker"
-description: "MoveTogether reads Apple Health on iPhone and Health Connect on Android. Share your wearable into one of them, then choose the tracker that counts."
+description: "MoveTogether reads Apple Health on iPhone and Health Connect on Android. Share your wearable into one of them, and on iPhone choose the tracker that counts."
 ---
 
 If your watch, ring, or app syncs to Apple Health or Health Connect, it works with MoveTogether. You don't need a wearable at all: your phone's own step count works too.
@@ -16,7 +16,7 @@ MoveTogether doesn't connect to wearables directly, so there is no wearable acco
 
 1. In your wearable's own app, turn on sharing to Apple Health (iPhone) or Health Connect (Android).
 2. In MoveTogether, allow access to Apple Health or Health Connect when asked.
-3. Pick your tracker when MoveTogether asks which one you use.
+3. On iPhone, check which tracker counts in **Settings → Data Sources**, under **Your tracker**. Android has no tracker to pick.
 
 Step-by-step guides for each device:
 
@@ -38,12 +38,26 @@ Strava brings workouts, not all-day steps. Not every device shares every metric,
 
 MoveTogether also has an [Apple Watch app](/account/apple-watch-app). Installing it is separate from giving MoveTogether Apple Health access.
 
-## One tracker counts
+## Which data counts
 
-You choose one tracker, and only that tracker counts toward your rings, competitions, and leagues. MoveTogether doesn't add devices together, so the same walk never counts twice. See [choose which tracker counts](/getting-started/primary-activity-source).
+<Tabs>
+  <Tab title="iPhone">
+    One tracker counts toward your Move, Exercise, and Steps rings, competitions, and leagues. MoveTogether doesn't add devices together, so the same walk never counts twice. See [choose which tracker counts](/getting-started/primary-activity-source).
+
+    Workouts are different: workouts from any device still count toward a **Workout Count** competition.
+  </Tab>
+  <Tab title="Android">
+    There's no tracker to pick. MoveTogether uses Health Connect's own combined total for each day. When two apps record the same activity, Health Connect's app priority decides which one counts, so the same walk isn't counted twice. Change the priority in Health Connect.
+  </Tab>
+</Tabs>
+
+On both apps, steps and workouts you type in by hand don't count.
 
 ## Had an older direct connection?
 
-If you connected a wearable to MoveTogether directly before version 2.1.1, that connection keeps working for now. Switch to Apple Health or Health Connect in **Settings → Data Sources** so nothing is lost.
+If you connected a wearable to MoveTogether directly before version 2.1.1, it may still be listed.
+
+- **iPhone:** it appears under **Connected services** in **Settings → Data Sources**. These older connections can only be removed. Turn on Apple Health sharing in the wearable's app ([guide](/apple-health/connect-your-tracker)) so its activity keeps counting.
+- **Android:** it appears under **Moving to Health Connect** in **Settings → Data Sources**. These connections are being retired. Turn on Health Connect sharing in the wearable's app ([guide](/health-connect/connect-your-tracker)) so your activity keeps counting.
 
 For missing readings, see [manage and troubleshoot data sources](/troubleshooting/data-sources).
