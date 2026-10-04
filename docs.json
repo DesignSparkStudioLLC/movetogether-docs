@@ -126,7 +126,10 @@
           {
             "group": "Movecoins",
             "pages": [
-              "movecoins/overview"
+              "movecoins/overview",
+              "movecoins/turn-on",
+              "movecoins/earning",
+              "movecoins/cash-out"
             ]
           },
           {
@@ -157,6 +160,7 @@
               "troubleshooting/notification-problems",
               "troubleshooting/app-performance",
               "troubleshooting/subscription-issues",
+              "troubleshooting/movecoins",
               "troubleshooting/contact-support"
             ]
           }
