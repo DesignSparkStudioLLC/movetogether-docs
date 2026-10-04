@@ -1,6 +1,6 @@
 ---
 title: "Move Leagues"
-description: "How MoveTogether's free weekly leagues work: tiers, scoring, Monday resets, promotion and demotion zones, ties, and protection."
+description: "How MoveTogether's free weekly leagues work: tiers, scoring, local Monday resets, results timing, promotion and demotion zones, ties, and the demotion shield."
 ---
 
 Move Leagues are free weekly cohorts. Open **Compete**, then the leaderboard launcher and **League**, to see your tier, cohort, current zone, and countdown.
@@ -26,34 +26,38 @@ Promotion is capped at half the cohort. For example, a 10-person Jogger cohort p
 
 ## Weekly timing
 
-Leagues reset at Monday 00:00 UTC. At that moment MoveTogether finalizes the preceding week, records your result, assigns a new cohort at your resulting tier, and starts the new week at zero. Depending on your time zone, that can be Sunday evening or Monday morning locally.
+Your league week runs from Monday at midnight through Sunday in your own time zone. People in one cohort can live in different time zones, so each person's week closes at their own local Monday.
 
-If a cohort has too few active movers for a meaningful race, the app can hold everyone in their current tier for that week. The League card explains when no promotion or demotion will occur.
+After the week ends, the League card shows **Results pending** while everyone in the cohort finishes and their trackers sync. Results land by 6 a.m. Eastern Time every Monday, sooner when the whole cohort's week has already ended. Then MoveTogether records your result and assigns your next cohort at your new tier. Your new week's points count from Monday while your next group is being prepared.
+
+If a cohort has fewer than 8 people, it's a quiet week: nobody promotes or demotes. The League card shows **No promotions or demotions this week**.
 
 ## Scoring
 
 League points for the week are:
 
 ```text
-points = move calories + exercise minutes + (steps ÷ 100)
+points = move calories + exercise minutes + round(week's steps ÷ 100)
 ```
 
-The same formula is used for the **weekly** Global leaderboard. The **Friends** leaderboard uses the formula for its **daily** ranking and resets at local midnight. Your daily ring goals do not change any of these leaderboard scores.
+Calories and minutes are added up across Monday to Sunday. Steps are added up for the whole week first, then divided by 100 and rounded once. Your daily ring goals don't change your league score, so someone with a low Move goal can't out-rank someone with a tougher goal for the same activity.
 
-**Example:** 420 active calories, 35 exercise minutes, and 8,250 steps produces `420 + 35 + 82.5 = 537.5` league points before the displayed total is summed with other days.
+**Example:** a week with 2,940 active calories, 245 exercise minutes, and 57,750 steps scores `2,940 + 245 + round(577.5) = 3,763` league points.
+
+The **Friends** leaderboard ranks today's activity and resets at your local midnight. The **Global** leaderboard ranks the current week with its own formula, so your Global score won't match your League points.
 
 ## Zones and ties
 
-The leaderboard marks a promotion zone, safety zone, and demotion zone. A league’s final order uses a stable system tie-break based on account identity, so changing a display name cannot affect promotion or demotion. This differs from monthly challenges, where people with the same completion count share a dense rank tier. See [monthly challenges](/engagement/monthly-challenges).
+The leaderboard marks a promotion zone, safety zone, and demotion zone. A league’s final order uses a stable system tie-break based on account identity, so changing a display name cannot affect promotion or demotion. Monthly challenge standings work differently; see [monthly challenges](/engagement/monthly-challenges).
 
-## Demotion protection
+## Demotion shield
 
-You can hold one demotion protection. If you finish in the demotion zone while holding one, it applies automatically and you stay in your current tier. The app shows whether you have protection; it does not guarantee protection for every low-scoring week.
+You start with one demotion shield. If you finish in the demotion zone while holding it, it's used automatically and you stay at your current tier. Once it's used, it's gone. The League card shows whether you have one.
 
 ## Reading the other leaderboard tabs
 
 - **League:** your current weekly cohort and tier.
 - **Friends:** a daily ranking of people you have added; it resets at local midnight.
-- **Global:** the top 100 movers worldwide for the current league week.
+- **Global:** the top 100 movers worldwide for the current week.
 
 For a direct challenge with friends using a different scoring method, create or join a competition. For missing data or a delayed position change, see [competition troubleshooting](/troubleshooting/competition-issues).
