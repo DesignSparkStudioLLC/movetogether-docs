@@ -1,6 +1,6 @@
 ---
 title: "How competitions work"
-description: "How to join or host a MoveTogether competition, choose a scoring method, understand its lifecycle, and run repeating cycles."
+description: "How to join or host a MoveTogether competition, choose a format and dates, what you can edit while it runs, its lifecycle, and repeating rounds."
 ---
 
 Competitions turn synced activity into a shared leaderboard or a shared goal. Join from an invite, a code, or an in-app invitation, or host your own. On iPhone, the red **+** button has **Join with code** and **New competition**.
@@ -9,31 +9,59 @@ Competitions turn synced activity into a shared leaderboard or a shared goal. Jo
 
 You can join competitions on every plan. Membership and Pro can host unlimited competitions. Accounts on the older Free plan can host up to two at a time: each active, upcoming, or draft competition you host uses a slot, and completing or deleting one frees it. Seasonal and evergreen competitions don't use a slot, and an eligible bonus slot can allow one more.
 
-If joining fails, check the invite, whether you're eligible, and whether the competition has ended. You never need to upgrade just to join.
+If joining fails, check the invite, whether you're eligible, and whether the competition has ended or is full. You never need to upgrade just to join.
 
 ## Choose a format
 
-Use **Individual** for a normal ranking, or turn on **Team** and choose two to four teams. Team standings combine members' scores. Some formats also offer a group goal the group works toward alongside the scoring method.
+Use **Individual** for a normal ranking, or turn on **Team** and choose two to four teams. Team standings combine members' scores. You can also add a group goal, a shared total the group works toward alongside the scoring method (hosting one needs Membership or Pro).
 
-Every scoring method is fair across devices. Apple Watch, Garmin, WHOOP, Oura, a phone on its own: every device's data arrives through Apple Health or Health Connect, and every method scores the same Move, Exercise, and Steps numbers.
+For a bigger event, such as a company, gym, or club, an iPhone host on Pro can make it a **Group challenge**: 10 to 100 people and up to 20 teams. See [Group Challenges](/competitions/group-challenges).
 
-The host chooses a start and end date. The wizard offers weekend, weekly, monthly, and custom windows. Before the competition starts, the host can edit its settings. During an active competition, changing scoring needs the group’s agreement; see [changing competition scoring](/competitions/changing-scoring).
+Most scoring methods read the same Move, Exercise, and Steps numbers every device sends through Apple Health or Health Connect. Workout Count also looks at recorded workouts, and Distance (iPhone only) counts only the distance in recorded runs or walks. See the [scoring reference](/competitions/scoring-reference).
+
+## Pick dates
+
+The host chooses a start and end date. On iPhone, the dates step has shortcuts: **This weekend**, **This week**, **Next 7 days**, **Next 28 days**, and **Custom**. **This week** runs Monday to Sunday. On Android, you pick a start and end date.
+
+## Edit a competition
+
+The host opens the competition, then:
+
+- **iPhone:** tap **More options** (the **⋯** button), then **Edit competition**.
+- **Android:** tap the info (**ⓘ**) button, then **Edit competition**. Android edits the name, public or private, and dates. Cover photo and scoring can't be changed there.
+
+| Setting | Before it starts | While it's active |
+| --- | --- | --- |
+| Name | Editable | Editable |
+| Cover photo (iPhone) | Editable | Editable |
+| End date | Editable | Editable |
+| Public or private | Editable | Editable |
+| Repeat (iPhone) | Editable | Editable, from the next round |
+| Start date | Editable | Locked |
+| Scoring (iPhone) | Editable | Locked; the host can ask the group to change it (both apps) |
+| Teams | Set when created | Set when created |
+
+To change scoring while a competition is active, see [changing competition scoring](/competitions/changing-scoring).
 
 ## Lifecycle and scores
 
 - **Upcoming:** people can join and the competition has not begun.
 - **Active:** synced activity is scored and the leaderboard updates as data arrives.
-- **Completed:** the cycle’s standings are finalized and retained in history.
+- **Completed:** the round's standings are finalized and kept in history.
 
-Activity is calculated on the server. A sync delay can make a score appear late, and a refresh cannot create activity that has not reached MoveTogether yet.
+Activity is calculated on the server. A sync delay can make a score appear late, and a refresh cannot create activity that has not reached MoveTogether yet. Steps and workouts typed in by hand never count.
 
-When someone joins an active competition, MoveTogether schedules a backfill of already-elapsed dates in the competition window. It skips dates before that person’s signup and dates with no activity record. Without Pro, joining a seasonal event does not credit days before you joined; the scoring window starts at their join date. The backfill runs after the join response, so the person can appear in the competition before older eligible days finish processing.
+When someone joins an active competition, MoveTogether schedules a backfill of already-elapsed dates in the competition window. It skips dates before that person's signup and dates with no activity record. Without Pro, joining a seasonal event does not credit days before you joined; the scoring window starts at their join date. The backfill runs after the join response, so the person can appear in the competition before older eligible days finish processing.
 
 ## Repeating competitions
 
-When a host selects **Repeat**, MoveTogether creates sequential cycles with the same competition setup. Each cycle has its own dates and final standings. There can be a gap between cycles for formats whose next window does not begin immediately; the next cycle then appears as upcoming until its start date.
+On iPhone, the host can set **Repeat** to **None**, **Weekly**, **2 Weeks**, or **Monthly** when creating a competition or later in **Edit competition**. A new round starts every week, every two weeks, or every month and keeps the same length. Each round has its own dates and final standings, and the next round shows as upcoming until it starts.
 
-Use a repeating competition for a standing weekly or monthly group, not when you need one uninterrupted all-time total. Review each cycle’s result in the competition details or your competition history.
+A repeat option is greyed out when a round is longer than the gap between rounds. For example, a 10-day round can't repeat weekly. The app explains: "Each round is 10 days, so a new one can't start sooner than that."
+
+If the host changes **Repeat** while a round is running, the change starts with the next round, and this round's dates stay the same. Setting it to **None** lets this round finish as normal, then the competition ends.
+
+Use a repeating competition for a standing weekly or monthly group, not when you need one uninterrupted all-time total. Review each round's result in the competition details or your [competition history](/competitions/competition-history).
 
 ## Next steps
 
