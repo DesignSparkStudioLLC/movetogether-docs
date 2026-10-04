@@ -124,6 +124,12 @@
             ]
           },
           {
+            "group": "Movecoins",
+            "pages": [
+              "movecoins/overview"
+            ]
+          },
+          {
             "group": "Account & privacy",
             "pages": [
               "account/profile",
