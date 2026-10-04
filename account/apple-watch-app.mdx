@@ -1,81 +1,73 @@
 ---
 title: "The MoveTogether Apple Watch app"
-description: "Everything the MoveTogether Apple Watch app does: voice with Coach Mo, today's activity, streak detail, events, friends leaderboard, and complications."
+description: "What the MoveTogether Apple Watch app does: Today, Compete, Friends, and Events pages, voice with Coach Mo, streak detail, and Move ring complications."
 ---
 
-The MoveTogether Apple Watch app gives you useful pieces of the iPhone app on your wrist. Install it from the Watch app on your paired iPhone if it is not already available.
+The MoveTogether Apple Watch app puts your rings, competitions, friends, and events on your wrist. Install it from the Watch app on your paired iPhone if it isn't already there.
 
 ## Signing in
 
-The Watch app signs in with your iPhone session, so there's no separate login. The first time you open it after installing, give it a few seconds to sync. If it shows a "needs pairing" screen, open the MoveTogether iPhone app once and the Watch should pick up the session.
+The Watch app signs in with your iPhone session, so there's no separate login. The first time you open it, give it a few seconds to sync.
 
-## Home screen
+- If it shows **Install MoveTogether**, install MoveTogether on your paired iPhone, then open it and sign in.
+- If it shows **Sign in on your iPhone**, open MoveTogether on your iPhone and sign in. The watch follows automatically.
 
-The main view shows today at a glance:
+## The four pages
 
-- **Date header** at the top
-- **Live event banner** (only when there's an active seasonal event)
-- **Hero ring:** your Move ring, large
-- **Three small ring tiles:** Move, Exercise, and Steps progress
-- **Streak card:** your weekly streak, with a link to its detail
-- **Today's challenges:** your daily challenges with progress
-- **Friends preview:** where you stand against friends today
-- **Competitions summary:** your active competitions and standings
+The app opens on **Today**. Turn the Digital Crown or swipe up and down to move between the four pages:
 
-Two toolbar buttons:
+1. **Today:** a banner when a seasonal event is live, your Move, Exercise, and Steps rings with progress toward each goal, your weekly streak, and **Today's challenges** with progress bars.
+2. **Competitions:** your active competitions. Tap one for its leaderboard, with the top 3 on a podium, everyone else ranked below, and your row highlighted.
+3. **Friends:** today's leaderboard with your friends, with the top 3 on a podium and your row highlighted.
+4. **Events:** limited-time events grouped as **Live now**, **Coming up**, and **Wrapped**.
 
-- **Microphone icon:** talk to Coach Mo (see below)
-- **Sparkles icon:** opens seasonal events
+The microphone button at the top left of every page opens Coach Mo.
+
+If the Today page asks you to **Connect Health**, tap **Continue** and allow activity and steps so your rings can show.
 
 ## Talking to Coach Mo on Watch
 
-Tap the microphone in the top-left of the Home screen.
+Tap the microphone button at the top left of any page.
 
-You'll see the conversation go through a few states:
+1. You'll see a greeting and a **Chat with Coach Mo** button.
+2. After a brief **Connecting…** step, the conversation is live. Mo's latest reply shows as text you can scroll, with a red button at the bottom to end the call.
+3. When the conversation ends, you can tap **Talk again** or **Close**.
 
-1. **Idle:** a greeting and a **Chat with Coach Mo** button
-2. **Connecting:** a brief spinner
-3. **Live:** the orb animates while Mo talks, with a red end-call button at the bottom
-4. **Ended:** **Talk again** and **Close** buttons
-
-Mo can answer questions, give you coaching, and react to what you tell it. The conversation transcript appears above the end-call button so you can scroll through what was said.
-
-Coach Mo voice on Apple Watch requires Pro. If Watch voice is temporarily unavailable, the app explains the status and lets you try again when service is available.
+Coach Mo voice on Apple Watch requires Pro. Without Pro, the watch shows **Pro feature** and asks you to upgrade in the iPhone app. If you've used Coach Mo's weekly allowance, the watch shows **Coach Mo is resting** until it resets.
 
 For more on how Mo works, see [Coach Mo](/social-coach/coach-mo) and [What makes Coach Mo different](/social-coach/what-makes-mo-different).
 
 ## Streak detail
 
-Tap the streak card on Home for the full breakdown:
+Tap the streak card on the Today page for the full breakdown:
 
-- **Hero number:** your streak in qualifying weeks and the weeks to its next milestone
-- **Last 30 days:** a grid of qualifying days; today is outlined
+- **Your streak:** the number of qualifying weeks in a row, and the weeks to your next milestone
+- **Last 30 days:** a grid of qualifying days, with today outlined
 
-The day grid and the weekly streak are different measures. A qualifying day can contribute to the current week, while the streak count shown here is in weeks. Badge progress has its own rules and is not the same as the day grid or weekly streak count.
+The day grid and the weekly streak are different measures. A qualifying day counts toward the current week, while the streak number is in weeks. Badge progress has its own rules and isn't the same as either.
 
 ## Events
 
-Tap the sparkles icon on Home to see all active, upcoming, and completed events. Tap an event for its full details: tagline, rewards, deadline countdown ("3d 4h left"), and community progress if there is one.
-
-## Friends leaderboard
-
-The top 3 are shown as a podium with gold, silver, and bronze accents. Ranks 4 and below scroll below the podium with your row highlighted so you can spot yourself quickly.
+Tap an event on the Events page for its details: name, tagline, reward, when it ends or starts, and community progress if the event has a shared goal. If you've joined, you'll see **You're in**. To join an event, use MoveTogether on your iPhone.
 
 ## Complications
 
-MoveTogether ships an Apple Watch complication that puts your Move ring progress on your watch face.
+MoveTogether has a **Move Ring** complication that shows how close you are to closing your Move ring today. It works in four complication slots:
 
-**What it shows:** a gauge with your current Move-ring progress. The complication requests a refresh about every 15 minutes; watchOS schedules the actual updates.
+- **Circular:** a ring gauge with your Move calories
+- **Corner:** a curved gauge with your Move calories
+- **Inline:** one line at the top of the watch face with your calories and goal
+- **Rectangular:** a gauge with your calories, your goal, and your percent of goal
+
+The complication reads today's Move ring from Apple Health on your watch. It asks for an update about every 15 minutes, and watchOS decides when updates actually happen.
 
 **Adding it:**
 
-1. Long-press your Apple Watch face.
+1. Touch and hold your watch face.
 2. Tap **Edit**.
 3. Swipe to the complications screen.
-4. Tap a complication slot, scroll to **MoveTogether**, tap to select.
+4. Tap a complication slot, scroll to **MoveTogether**, and select it.
 5. Press the Digital Crown to save.
-
-Designed for the **accessoryCircular** slot on modern Watch faces (Modular, Infograph, and similar).
 
 ## Requirements
 
@@ -85,8 +77,8 @@ Designed for the **accessoryCircular** slot on modern Watch faces (Modular, Info
 
 ## Background behavior
 
-The Watch app can refresh when the watch has a connection, but watchOS controls background scheduling. Open the Watch app when you need the latest data. Coach Mo voice needs a live connection.
+The Watch app can refresh when the watch has a connection, but watchOS controls background updates. Open the Watch app when you need the latest data. Coach Mo voice needs a live connection.
 
 <Note>
-  If the complication shows a dash or data looks stale, open the MoveTogether Watch app once to trigger a refresh, or check Apple Health permissions in **iPhone Settings → Health → Data Access & Devices → MoveTogether**.
+  If the complication shows no progress or looks out of date, open the MoveTogether Watch app once to refresh it, or check Apple Health permissions in **iPhone Settings → Health → Data Access & Devices → MoveTogether**.
 </Note>
