@@ -1,19 +1,20 @@
 ---
 title: "Manage and troubleshoot data sources"
-description: "Check Apple Health or Health Connect access, your chosen tracker, and missing metrics before changing anything."
+description: "Check Apple Health or Health Connect access, your chosen tracker on iPhone, missing metrics, and older connections before changing anything."
 ---
 
-Start in **Settings → Data Sources**. MoveTogether reads Apple Health on iPhone and Health Connect on Android, so most problems are one of three things: your wearable isn't sharing into the health app, MoveTogether can't read that metric, or a different tracker is counting.
+Start in **Settings → Data Sources**. MoveTogether reads Apple Health on iPhone and Health Connect on Android, so most problems are one of three things: your wearable isn't sharing into the health app, MoveTogether can't read that metric, or a different device is counting (your chosen tracker on iPhone, or Health Connect's app priority on Android).
 
 ## What you see and what to do
 
 | What you see | What to do |
 | --- | --- |
-| Your device isn't in the tracker list | Turn on sharing in the wearable's own app. See [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker). |
-| Your tracker **hasn't synced recently** | Open the wearable's app and let it sync, then tap **Get it syncing** or refresh. |
+| Your device isn't in the tracker list (iPhone) | Turn on sharing in the wearable's own app. See [Apple Health](/apple-health/connect-your-tracker) or [Health Connect](/health-connect/connect-your-tracker). |
+| Your tracker **hasn't synced recently** (iPhone) | Open the wearable's app and let it sync, then tap **Get it syncing** or refresh. |
 | Apple Health needs access | Tap **Connect** or **Review Access** and allow the categories you want. |
 | One metric is empty | Check that the device records it and shares it into the health app, and that MoveTogether can read it. |
-| Totals differ from another device | Check which tracker is counting. See [choose which tracker counts](/getting-started/primary-activity-source). |
+| Totals differ from another device | On iPhone, check which tracker is counting. See [choose which tracker counts](/getting-started/primary-activity-source). On Android, check Health Connect's app priority. |
+| Steps or a workout you typed in by hand is missing | That's expected. Steps and workouts typed in by hand don't count. |
 | No recent activity in the wearable's app | Sync the device there first. MoveTogether can't read what hasn't arrived. |
 
 Pull to refresh after each check.
@@ -22,13 +23,13 @@ Pull to refresh after each check.
 
 **Health Data** in Data Sources shows today's value for each metric. To allow or block a specific app for a metric, open the Health app, tap **Browse**, choose the metric, then **Data Sources & Access**.
 
-If Data Sources offers to load your history, let it finish before checking older dates.
+If a recent day is missing, tap **Backfill from Apple Health**. It pulls in recent days that didn't reach MoveTogether. **Review Health Permissions** lets you allow newly supported metrics, and **Manage in Apple Health** opens the Health app.
 
 ## Android: Health Connect
 
 1. Confirm the reading is in Health Connect.
 2. Check that your wearable's app has permission to write it.
-3. Check MoveTogether's read permissions in Health Connect. Background and history access are separate permissions.
+3. Check MoveTogether's read permissions in Health Connect. Reading in the background is a separate permission. MoveTogether reads up to the last 30 days.
 4. Reopen MoveTogether and refresh.
 
 See [MoveTogether on Android](/getting-started/android) for what MoveTogether reads.
@@ -37,8 +38,11 @@ See [MoveTogether on Android](/getting-started/android) for what MoveTogether re
 
 Revoking a data type stops future reads of that type. It doesn't remove copies already stored in your account. See [data controls](/account/data-and-privacy).
 
-## "Moving to Apple Health" in Data Sources
+## Older connections in Data Sources
 
-This section appears on iPhone if you connected a wearable directly before version 2.1.1. That connection keeps working for now. Turn on Apple Health sharing in the wearable's app ([guide](/apple-health/connect-your-tracker)), then choose it as your tracker, so nothing is lost when you switch. On Android, switch to Health Connect the same way ([guide](/health-connect/connect-your-tracker)).
+If you connected a wearable to MoveTogether directly before version 2.1.1, Data Sources may still list it.
+
+- **iPhone:** it appears under **Connected services**. These older connections can only be removed: tap **Disconnect**. Your wearable now reaches MoveTogether through Apple Health, so turn on Apple Health sharing in the wearable's app ([guide](/apple-health/connect-your-tracker)) to keep its activity counting.
+- **Android:** it appears under **Moving to Health Connect**. These connections are being retired. Turn on Health Connect sharing in the wearable's app ([guide](/health-connect/connect-your-tracker)) so your activity keeps counting.
 
 Still stuck? Use [fitness data not syncing](/troubleshooting/sync-issues).

@@ -73,6 +73,8 @@
               "competitions/how-it-works",
               "competitions/scoring-reference",
               "competitions/personal-and-shared-goals",
+              "competitions/distance",
+              "competitions/group-challenges",
               "competitions/changing-scoring",
               "competitions/leaderboard",
               "competitions/leagues",
@@ -161,7 +163,8 @@
               "troubleshooting/app-performance",
               "troubleshooting/subscription-issues",
               "troubleshooting/movecoins",
-              "troubleshooting/contact-support"
+              "troubleshooting/contact-support",
+              "troubleshooting/screen-share"
             ]
           }
         ]
