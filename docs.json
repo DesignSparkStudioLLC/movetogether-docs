@@ -127,6 +127,15 @@
             ]
           },
           {
+            "group": "Movecoins",
+            "pages": [
+              "movecoins/overview",
+              "movecoins/turn-on",
+              "movecoins/earning",
+              "movecoins/cash-out"
+            ]
+          },
+          {
             "group": "Account & privacy",
             "pages": [
               "account/profile",
@@ -154,6 +163,7 @@
               "troubleshooting/notification-problems",
               "troubleshooting/app-performance",
               "troubleshooting/subscription-issues",
+              "troubleshooting/movecoins",
               "troubleshooting/contact-support",
               "troubleshooting/screen-share"
             ]
